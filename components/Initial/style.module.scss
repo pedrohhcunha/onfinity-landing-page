@@ -1,0 +1,44 @@
+.initial{
+    width: 100%;
+    padding: 60px var(--padding-horizontal);
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .contentArea{
+        width: 100%;
+        gap: 20px;
+
+        .title{
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 56px;
+            letter-spacing: 0.2px;
+            color: var(--neutral);
+
+            strong{
+                color: var(--secondary);
+            }
+        }
+
+        .subTitle{
+            max-width: 450px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: justify;
+            letter-spacing: 0.3px;
+            color: var(--neutral);
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .imageArea{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

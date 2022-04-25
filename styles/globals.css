@@ -1,8 +1,9 @@
 :root{
   --neutral: #FFFFFF;
   --primary: #0068FF;
-  --secondary: ##F3BF1B;
+  --secondary: #F3BF1B;
   --thirdy: #072249;
+  --padding-horizontal: 12%;
 }
 
 *{

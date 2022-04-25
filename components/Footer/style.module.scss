@@ -3,7 +3,7 @@
 
     .footerPrimary{
         width: 100%;
-        padding: 60px 5%;
+        padding: 60px var(--padding-horizontal);
         background-color: var(--primary);
         display: flex;
         justify-content: space-between;
@@ -17,7 +17,7 @@
 
     .footerSecondary{
         width: 100%;
-        padding: 60px 5%;
+        padding: 60px var(--padding-horizontal);
         background-color: var(--neutral);
         display: flex;
         justify-content: space-between;
