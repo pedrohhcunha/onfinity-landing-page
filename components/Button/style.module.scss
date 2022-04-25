@@ -1,0 +1,23 @@
+.button{
+    padding: 0 20px;
+    background: var(--primary);
+    border-radius: 4px;
+    height: 48px;
+    border: none;
+    color: var(--neutral);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &.alternative{
+        background: var(--neutral);
+        color: var(--primary);
+    }
+
+    &:hover{
+        filter: brightness(.9);
+    }
+}

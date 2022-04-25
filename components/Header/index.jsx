@@ -1,11 +1,12 @@
 import styles from './style.module.scss'
 import logo from './images/logo.svg'
 import Image from 'next/image'
+import Button from '../Button'
 
 export default function Header() {
     return(
         <header className={styles.header}>
-            <Image src={logo} alt="logo" className={styles.logo}/>
+            <Image src={logo} alt="Logo oficial da Onfinity" className={styles.logo}/>
             <nav className={styles.nav}>
                 <ul className={styles.list}>
                     <li className={styles.item}>
@@ -24,7 +25,7 @@ export default function Header() {
                         <a href="#" className={styles.link}>Trabalhe conosco</a>
                     </li>
                 </ul>
-                <button className={styles.button}>Comprar agora</button>
+                <Button>Comprar agora</Button>
             </nav>
         </header>
     )
