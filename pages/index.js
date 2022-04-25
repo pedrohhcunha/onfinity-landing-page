@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Initial from "../components/Initial"
 import About from "../components/About"
+import Infos from "../components/Infos"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Header />
       <Initial />
+      <Infos />
       <About />
       <Footer />
     </>
