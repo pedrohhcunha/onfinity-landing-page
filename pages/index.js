@@ -5,6 +5,7 @@ import Initial from "../components/Initial"
 import About from "../components/About"
 import Infos from "../components/Infos"
 import Purpose from "../components/Purpose"
+import Benefits from "../components/Benefits"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <Infos />
       <Purpose />
+      <Benefits />
       <Footer />
     </>
   )
