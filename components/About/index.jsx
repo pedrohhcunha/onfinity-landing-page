@@ -5,9 +5,9 @@ import SectionTitle from '../SectionTitle'
 
 export default function About() {
     return(
-        <div className={styles.about}>
+        <section className={styles.about}>
             <div className={styles.areaImage}>
-                <Image src={placeholder} layout="fill" />
+                <Image src={placeholder} layout="fill" objectFit='cover' />
             </div>
             <div className={styles.contentArea}>
                 <SectionTitle alternative>A Onfinity</SectionTitle>
@@ -19,6 +19,6 @@ export default function About() {
                     Fabricamos, importamos e comercializamos suprimentos corporativos que garantem custos competitivos, alta produtividade e performance no seu ambiente de trabalho.
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
