@@ -7,6 +7,7 @@ import Infos from "../components/Infos"
 import Purpose from "../components/Purpose"
 import Benefits from "../components/Benefits"
 import Solutions from "../components/Solutions"
+import Industries from "../components/Industries"
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Purpose />
       <Solutions />
       <Benefits />
+      <Industries />
       <Footer />
     </>
   )
