@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
       <Header />
       <Initial />
-      <Infos />
       <About />
+      <Infos />
       <Footer />
     </>
   )
