@@ -1,6 +1,7 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
 import placeholder from './images/placeholder.webp'
+import SectionTitle from '../SectionTitle'
 
 export default function About() {
     return(
@@ -9,7 +10,7 @@ export default function About() {
                 <Image src={placeholder} layout="fill" />
             </div>
             <div className={styles.contentArea}>
-                <h2 className={styles.title}>A Onfinity</h2>
+                <SectionTitle alternative>A Onfinity</SectionTitle>
                 <p className={styles.paragraph}>
                     Possuímos um ecossistema que conecta indústrias a clientes finais e que alia big data, inteligência artificial e atendimento comercial consultivo. 
                     <br /> <br />
