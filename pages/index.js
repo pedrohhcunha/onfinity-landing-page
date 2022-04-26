@@ -6,6 +6,7 @@ import About from "../components/About"
 import Infos from "../components/Infos"
 import Purpose from "../components/Purpose"
 import Benefits from "../components/Benefits"
+import Solutions from "../components/Solutions"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <Infos />
       <Purpose />
+      <Solutions />
       <Benefits />
       <Footer />
     </>
