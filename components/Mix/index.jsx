@@ -49,6 +49,10 @@ export default function Mix() {
 
     const [initialShowedCard, setInitialShowedCard] = useState(0);
 
+    const [scrollDirectionAuto, setScrollDirectionAuto] = useState('next');
+
+    const [autoCount, setAutoCount] = useState(0);
+
     let scrollSlide = async (direction) => {
         let firstChildren = slideRef.current.children[0];
         let secondChildren = slideRef.current.children[1];
@@ -62,6 +66,26 @@ export default function Mix() {
             setInitialShowedCard(initialShowedCard + 1);
         }
     }
+
+    useEffect(() => {
+
+        setTimeout(() => {
+            console.log("Delayed for 1 second.")
+            if(initialShowedCard <= 3 && scrollDirectionAuto === 'next'){
+                scrollSlide('next')
+            } else if(initialShowedCard === 4 && scrollDirectionAuto === 'next'){
+                scrollSlide('prev')
+                setScrollDirectionAuto('prev')
+            } else if(initialShowedCard !== 0 && scrollDirectionAuto === 'prev'){
+                scrollSlide('prev')
+            } else if(initialShowedCard === 0 && scrollDirectionAuto === 'prev'){
+                scrollSlide('next')
+                setScrollDirectionAuto('next')
+            }
+            setAutoCount(autoCount + 1)
+        }, 3000)
+
+    }, [autoCount])
 
     return(
         <section id="mix" className={styles.mix}> 
