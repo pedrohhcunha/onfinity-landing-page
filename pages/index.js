@@ -9,6 +9,7 @@ import Benefits from "../components/Benefits"
 import Solutions from "../components/Solutions"
 import Industries from "../components/Industries"
 import Mix from "../components/Mix"
+import Segments from '../components/Segments'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Benefits />
       <Industries />
       <Mix />
+      <Segments />
       <Footer />
     </>
   )
