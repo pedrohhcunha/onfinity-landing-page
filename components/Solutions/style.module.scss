@@ -23,7 +23,7 @@
 
     .list{
         width: 100%;
-        padding: 30px var(--padding-horizontal);
+        padding: 50px var(--padding-horizontal);
         background-color: var(--primary);
         display: flex;
         align-items: flex-start;
@@ -36,6 +36,7 @@
             gap: 10px;
             max-width: 120px;
             text-align: center;
+            cursor: pointer;
 
             .areaIcon{
                 height: 50px;
