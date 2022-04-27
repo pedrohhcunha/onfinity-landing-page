@@ -8,13 +8,13 @@ export default function Footer() {
                     <h3 className={styles.title}>Institucional</h3>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>A Onfinity</a>
+                            <a href="#a-onfinity" className={styles.link}>A Onfinity</a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Soluções</a>
+                            <a href="#solucoes" className={styles.link}>Soluções</a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Segmentos</a>
+                            <a href="#segmentos" className={styles.link}>Segmentos</a>
                         </li>
                     </ul>
                 </div>
@@ -82,13 +82,13 @@ export default function Footer() {
                     <h3 className={styles.title}>Industrias</h3>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Azeplast</a>
+                            <a href="https://www.azeplast.com.br/" target="_blank" className={styles.link}>Azeplast</a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Septi</a>
+                            <a href="https://septi.life/" target="_blank" className={styles.link}>Septi</a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Weikki</a>
+                            <a href="https://www.weikki.com.br/" target="_blank" className={styles.link}>Weikki</a>
                         </li>
                     </ul>
                 </div>
