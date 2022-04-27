@@ -1,0 +1,23 @@
+.final{
+    width: 100%;
+    background: url(./images/background.png) no-repeat top center;
+    padding: 60px var(--padding-horizontal);
+    text-align: center;
+
+    .description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        color: var(--thirdy);
+        opacity: .7;
+        max-width: 500px;
+        margin: 30px auto;
+        margin-bottom: 50px;
+    }
+    
+    .areaForm{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
