@@ -5,6 +5,14 @@ import arrowLeft from './icons/left.svg'
 import arrowRight from './icons/right.svg'
 import Image from 'next/image'
 import { useRef, useState, useEffect } from 'react'
+import image1 from './images/1.png'
+import image2 from './images/2.png'
+import image3 from './images/3.png'
+import image4 from './images/4.png'
+import image5 from './images/5.png'
+import image6 from './images/6.png'
+import image7 from './images/7.png'
+import image8 from './images/8.png'
 
 export default function Mix() {
 
@@ -15,35 +23,35 @@ export default function Mix() {
     const slideItems = [
         {
             id: 1,
-            image: '/images/mix/1.jpg'
+            image: image1
         },
         {
             id: 2,
-            image: '/images/mix/2.jpg'
+            image: image2
         },
         {
             id: 3,
-            image: '/images/mix/3.jpg'
+            image: image3
         },
         {
             id: 4,
-            image: '/images/mix/4.jpg'
+            image: image4
         },
         {
             id: 5,
-            image: '/images/mix/5.jpg'
+            image: image5
         },
         {
             id: 6,
-            image: '/images/mix/6.jpg'
+            image: image6
         },
         {
             id: 7,
-            image: '/images/mix/7.jpg'
+            image: image7
         },
         {
             id: 8,
-            image: '/images/mix/8.jpg'
+            image: image8
         }
     ]
 
@@ -108,7 +116,7 @@ export default function Mix() {
                             slideItems.map(item => (
                                 <li key={item.id} className={styles.item}>
                                     <div className={styles.areaImage}>
-                                        {item.image}
+                                        <Image src={item.image} alt="mix" layout='fill' />
                                     </div>
                                     <Button alternative>Comprar agora</Button>
                                 </li>
