@@ -10,6 +10,7 @@ import Solutions from "../components/Solutions"
 import Industries from "../components/Industries"
 import Mix from "../components/Mix"
 import Segments from '../components/Segments'
+import Clients from "../components/Clients"
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <Industries />
       <Mix />
       <Segments />
+      <Clients />
       <Footer />
     </>
   )
