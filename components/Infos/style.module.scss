@@ -9,20 +9,11 @@
     list-style: none;
 
     .info{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
         text-align: center;
-
-        .areaIcon{
-            margin: 0 auto;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--neutral);
-            margin-bottom: 10px;
-        }
 
         .title{
             color: var(--thirdy);
@@ -30,6 +21,7 @@
             font-size: 18px;
             line-height: 20px;
             letter-spacing: 0.2px;
+            margin-top: 10px;
         }
 
         .subTitle{

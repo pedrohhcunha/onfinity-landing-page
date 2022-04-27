@@ -1,7 +1,7 @@
 import styles from './style.module.scss'
 import SectionTitle from '../SectionTitle'
 import icon1 from './icons/icon1.svg'
-import Image from 'next/image'
+import AreaIcon from '../AreaIcon'
 
 export default function Segments() {
 
@@ -55,6 +55,7 @@ export default function Segments() {
             icon: icon1
         }
     ]
+    
     return(
         <section className={styles.segments}>
             <SectionTitle alternative>Segmentos <strong>Onfinity</strong></SectionTitle>
@@ -65,9 +66,7 @@ export default function Segments() {
                 {listItems.length >= 1 ?
                     listItems.map((item, index) => (
                         <li key={index} className={styles.item}>
-                            <div className={styles.areaIcon}>
-                                <Image src={item.icon} alt=""/>
-                            </div>
+                            <AreaIcon icon={item.icon} alt={`Icon ${item.title}`} />
                             <h4 className={styles.text}>{item.title}</h4>
                         </li>
                     ))
