@@ -10,19 +10,19 @@ export default function Header() {
             <nav className={styles.nav}>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <a href="#" className={styles.link}>A Onfinity</a>
+                        <a href="#a-onfinity" className={styles.link}>A Onfinity</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#" className={styles.link}>Soluções</a>
+                        <a href="#solucoes" className={styles.link}>Soluções</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#" className={styles.link}>Segmentos</a>
+                        <a href="#segmentos" className={styles.link}>Segmentos</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#" className={styles.link}>Catálogos</a>
+                        <a href="#catalogos" className={styles.link}>Catálogos</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#" className={styles.link}>Trabalhe conosco</a>
+                        <a href="#trabalhe-consco" className={styles.link}>Trabalhe conosco</a>
                     </li>
                 </ul>
                 <Button>Comprar agora</Button>

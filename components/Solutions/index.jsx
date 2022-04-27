@@ -11,7 +11,7 @@ import SectionTitle from '../SectionTitle'
 
 export default function Solutions() {
     return(
-        <section id="solutions" className={styles.solutions}>
+        <section id="solucoes" className={styles.solutions}>
             <article className={styles.contentArea}>
                 <SectionTitle alternative>Nossas <strong>soluções</strong></SectionTitle>
 

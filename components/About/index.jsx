@@ -5,7 +5,7 @@ import SectionTitle from '../SectionTitle'
 
 export default function About() {
     return(
-        <section className={styles.about}>
+        <section id="a-onfinity" className={styles.about}>
             <div className={styles.areaImage}>
                 <Image src={placeholder} layout="fill" objectFit='cover' />
             </div>
