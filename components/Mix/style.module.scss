@@ -1,0 +1,66 @@
+.mix{
+    width: 100%;
+    padding: 60px var(--padding-horizontal);
+    background: var(--primary);
+    text-align: center;
+    overflow-x: hidden;
+
+    .listArea{
+        position: relative;
+
+        .arrow{
+            position: absolute;
+            top: 50%;
+            border: none;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+            z-index: 10000;
+
+            &.left{
+                left: -50px;
+                transform: translateY(-50%);
+            }
+
+            &.right{
+                right: -50px;
+                transform: translateY(-50%);
+            }
+        }
+
+
+        .wrapper{
+            width: 100%;
+            overflow-x: hidden;
+            
+            .list{
+                margin-top: 50px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                gap: calc(calc(100% - 880px) / 3);
+                transition: all 0.3s ease-in-out;
+                /*Area Util = 100% | Tamanho do card = 220px | Numero de card = 4 | Tamanho ocupado = 220 * 4 = 880 | Area livre = 100% - 880 | Numero de gaps = 4 - 1 | Tamanho do gap = ((100% - 880) / 3) (Area livre / Numero de gaps) */
+        
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    transition: all 0.3s ease-in-out;
+                    
+                    .areaImage{
+                        width: 220px;
+                        height: 220px;
+                        overflow: hidden;
+                        border-radius: 4px;
+                        background: var(--neutral);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
