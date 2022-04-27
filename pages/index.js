@@ -11,6 +11,7 @@ import Industries from "../components/Industries"
 import Mix from "../components/Mix"
 import Segments from '../components/Segments'
 import Clients from "../components/Clients"
+import Partners from '../components/Partners'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Mix />
       <Segments />
       <Clients />
+      <Partners />
       <Footer />
     </>
   )
