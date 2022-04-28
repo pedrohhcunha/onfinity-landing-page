@@ -13,6 +13,7 @@ import Segments from '../components/Segments'
 import Clients from "../components/Clients"
 import Partners from '../components/Partners'
 import Final from '../components/Final'
+import WhatsappButton from '../components/WhatsappButton'
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <Partners />
       <Final />
       <Footer />
+      <WhatsappButton />
     </>
   )
 }
