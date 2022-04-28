@@ -8,7 +8,7 @@ import AreaCheckbox from '../AreaCheckbox'
 export default function ContactForm() {
 
     const [formData, setFormData] = useState({
-        name: '',
+        nome: '',
         email: '',
         cargo: '',
         empresa: '',
@@ -61,14 +61,90 @@ export default function ContactForm() {
         ]
     });
 
+    const [errors, setErrors] = useState([]);
+
+    const [loading, setLoading] = useState(false);
+
+    const sendData = event => {
+        event.preventDefault()
+        console.log(formData)
+
+        if(!loading){
+            setLoading(true)
+
+            let auxErrors = []
+
+            if(formData.nome.length <= 2){
+                auxErrors.push({
+                    field: 'nome',
+                    message: 'O nome deve ter mais de 2 caracteres'
+                })
+            }
+            if(formData.email.length <= 5){
+                auxErrors.push({
+                    field: 'email',
+                    message: 'O email deve ter mais de 5 caracteres'
+                })
+            }
+            if(formData.cargo.length <= 5){
+                auxErrors.push({
+                    field: 'cargo',
+                    message: 'O cargo deve ter mais de 2 caracteres'
+                })
+            }
+            if(formData.empresa.length <= 5){
+                auxErrors.push({
+                    field: 'empresa',
+                    message: 'O nome da sua empresa deve ter mais de 2 caracteres'
+                })
+            }
+            if(!formData.quantidade_de_funcionarios){
+                auxErrors.push({
+                    field: 'quantidade_de_funcionarios',
+                    message: 'Informe a quantidade de funcionários da sua empresa'
+                })
+            }
+            if(formData.segmento.length <= 5){
+                auxErrors.push({
+                    field: 'segmento',
+                    message: 'O segmento não pode ter menos de 5 carcteres'
+                })
+            }
+            if(!formData.estado){
+                auxErrors.push({
+                    field: 'estado',
+                    message: 'Informe o estado'
+                })
+            }
+            if(formData.cidade.length <= 2){
+                auxErrors.push({
+                    field: 'cidade',
+                    message: 'A sua cidade deve ter mais de 2 caracteres'
+                })
+            }
+            if(formData.telefone.length <= 8){
+                auxErrors.push({
+                    field: 'telefone',
+                    message: 'O telefone deve ter mais de 8 caracteres'
+                })
+            }
+
+            if(auxErrors.length >= 1){
+                setLoading(false)
+                return setErrors(auxErrors)
+            }
+        }
+    }
+
     return(
-        <form className={styles.form}>
+        <form onSubmit={sendData} className={styles.form}>
             <AreaInput
                 label="Nome"
-                name="name"
+                name="nome"
                 placeholder="Digite seu nome"
-                value={formData.name}
-                onChange={event => setFormData({ ...formData, name: event.target.value })}
+                value={formData.nome}
+                onChange={event => setFormData({ ...formData, nome: event.target.value })}
+                error={errors.find(error => error.field === 'nome')?.message}
                 required
             />
             <div className={`${styles.inputsLine} ${styles.emailCargo}`}>
@@ -79,6 +155,7 @@ export default function ContactForm() {
                     placeholder="Digite seu e-mail"
                     value={formData.email}
                     onChange={event => setFormData({ ...formData, email: event.target.value })}
+                    error={errors.find(error => error.field === 'email')?.message}
                     required
                 />
                 <AreaInput
@@ -87,6 +164,7 @@ export default function ContactForm() {
                     placeholder="Digite seu cargo"
                     value={formData.cargo}
                     onChange={event => setFormData({ ...formData, cargo: event.target.value })}
+                    error={errors.find(error => error.field === 'cargo')?.message}
                     required
                 />
             </div>
@@ -97,6 +175,7 @@ export default function ContactForm() {
                     placeholder="Digite o nome da sua empresa"
                     value={formData.empresa}
                     onChange={event => setFormData({ ...formData, empresa: event.target.value })}
+                    error={errors.find(error => error.field === 'empresa')?.message}
                     required
                 />
                 <AreaSelect
@@ -117,6 +196,7 @@ export default function ContactForm() {
                         { value: '5001-10000', name: '5001-10000' },
                         { value: '10000+', name: '10000+' },
                     ]}
+                    error={errors.find(error => error.field === 'quantidade_de_funcionarios')?.message}
                     required
                 />
             </div>
@@ -126,6 +206,7 @@ export default function ContactForm() {
                 placeholder="Digite o segmento da sua empresa"
                 value={formData.segmento}
                 onChange={event => setFormData({ ...formData, segmento: event.target.value })}
+                error={errors.find(error => error.field === 'segmento')?.message}
                 required
             />
             <div className={`${styles.inputsLine} ${styles.estadoCidadeTelefone}`}>
@@ -164,6 +245,7 @@ export default function ContactForm() {
                         { value: 'SE', name: 'SE' },
                         { value: 'TO', name: 'TO' },
                     ]}
+                    error={errors.find(error => error.field === 'estado')?.message}
                     required
                 />
                 <AreaInput
@@ -172,6 +254,7 @@ export default function ContactForm() {
                     placeholder="Digite sua cidade"
                     value={formData.cidade}
                     onChange={event => setFormData({ ...formData, cidade: event.target.value })}
+                    error={errors.find(error => error.field === 'cidade')?.message}
                     required
                 />
                 <AreaInput
@@ -180,6 +263,7 @@ export default function ContactForm() {
                     placeholder="Digite seu telefone"
                     value={formData.telefone}
                     onChange={event => setFormData({ ...formData, telefone: event.target.value })}
+                    error={errors.find(error => error.field === 'telefone')?.message}
                     required
                 />
             </div>
@@ -192,10 +276,11 @@ export default function ContactForm() {
                         value: item.value
                     }
                 })}
+                error={errors.find(error => error.field === 'produtos_de_interesse')?.message}
                 required
             />
             <div className={styles.areaButton}>
-                <Button>Enviar pedido</Button>
+                <Button type="submit">Enviar pedido</Button>
             </div>
         </form>
     )

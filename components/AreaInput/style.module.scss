@@ -1,9 +1,6 @@
 .areaInput{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
-    gap: 5px;
+    text-align: left;
 
     .label{
         font-weight: 500;
@@ -11,6 +8,8 @@
         line-height: 22px;
         letter-spacing: 0.3px;
         color: var(--thirdy);
+        display: block;
+        margin-bottom: 5px;
     }
 
     .input{
@@ -28,6 +27,25 @@
             color: var(--thirdy);
             font-size: 12px;
             opacity: .7;
+        }
+    }
+    .error{
+        color: var(--error);
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        margin-top: 5px;
+    }
+
+    &.error{
+
+        .label{
+
+            color: var(--error);
+        }
+
+        .input{
+            border-color: var(--error);
         }
     }
 }
