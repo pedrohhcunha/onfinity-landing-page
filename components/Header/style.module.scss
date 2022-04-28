@@ -29,8 +29,15 @@
 
             .item{
                 height: 100%;
+                background-color: var(--neutral);
+                transition: all .3s ease-in;
+
+                &:hover{
+                    filter: brightness(.98);
+                }
 
                 .link{
+                    position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -43,10 +50,40 @@
                     line-height: 18px;
                     letter-spacing: 0.2px;
                     color: var(--thirdy);
-                    background-color: var(--neutral);
+                    background-image: linear-gradient(
+                        to right,
+                        var(--primary),
+                        var(--primary) 50%,
+                        var(--thirdy) 50%
+                    );
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all .3s ease-in;
+                    outline: none;
+
+                    &::before{
+                        content: '';
+                        background: var(--primary);
+                        position: absolute;
+                        height: 3px;        
+                        width: 0%;
+                        opacity: 0;
+                        border-radius: 2px;
+                        bottom: 20px;       
+                        transition: all .3s ease-in;
+                    }
 
                     &:hover{
                         filter: brightness(.9);
+                        background-position: 0;
+
+                        &::before{
+                            width: 80%;
+                            opacity: 1;
+                        }
                     }
                 }   
             }
