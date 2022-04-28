@@ -1,6 +1,18 @@
 import styles from './style.module.scss'
 import SectionTitle from '../SectionTitle'
-import icon1 from './icons/icon1.svg'
+import iconHospital from './icons/hospital.svg'
+import iconIndustrias from './icons/industries.svg'
+import iconAgro from './icons/agro.svg'
+import iconLab from './icons/laboratorios.svg'
+import iconFacilities from './icons/facilities.png'
+import iconFood from './icons/food.svg'
+import iconPrestadoras from './icons/supermercado.svg'
+import iconShopping from './icons/shopping.png'
+import iconHoteis from './icons/hoteis.svg'
+import iconConstrutoras from './icons/construtoras.svg'
+import iconEnsino from './icons/instituicoes.svg'
+import iconSupermercado from './icons/supermercado.svg'
+
 import AreaIcon from '../AreaIcon'
 
 export default function Segments() {
@@ -8,51 +20,51 @@ export default function Segments() {
     const listItems = [
         {
             title: "Hospitais",
-            icon: icon1
+            icon: iconHospital
         },
         {
             title: "Indústrias",
-            icon: icon1
+            icon: iconIndustrias
         },
         {
             title: "Agrouindustrias",
-            icon: icon1
+            icon: iconAgro
         },
         {
             title: "Laboratórios",
-            icon: icon1
+            icon: iconLab
         },
         {
             title: "Facilities",
-            icon: icon1
+            icon: iconFacilities
         },
         {
             title: "Food services",
-            icon: icon1
+            icon: iconFood
         },
         {
             title: "Prestadores de serviços",
-            icon: icon1
+            icon: iconPrestadoras
         },
         {
             title: "Supermercados",
-            icon: icon1
+            icon: iconSupermercado
         },
         {
             title: "Shopping centers",
-            icon: icon1
+            icon: iconShopping
         },
         {
             title: "Hoteis e resorts",
-            icon: icon1
+            icon: iconHoteis
         },
         {
             title: "Contrutoras",
-            icon: icon1
+            icon: iconConstrutoras
         },
         {
             title: "Instituições de ensino",
-            icon: icon1
+            icon: iconEnsino
         }
     ]
     
