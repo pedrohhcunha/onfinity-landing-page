@@ -10,7 +10,7 @@ export default function Clients() {
 
     return (
         <div className={styles.partners}>
-            <SectionTitle alternative>Clientes <strong>que confiam</strong> na gente</SectionTitle>
+            <SectionTitle alternative>Nossos <strong>parceiros</strong></SectionTitle>
             <p className={styles.description}>Somos parceiros e representantes de grandes indústrias para entregar as melhores soluções para cada uma das suas necessidades.</p>
             <ul className={styles.list}>
                 <li className={styles.item}>
