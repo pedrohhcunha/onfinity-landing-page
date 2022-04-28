@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 import SectionTitle from '../SectionTitle'
-import background from './images/background.png'
+import ContactForm from '../ContactForm'
 
 export default function Final() {
     return(
@@ -10,7 +10,7 @@ export default function Final() {
                 Preencha o formulário para falar com nossos especialistas. 
             </p>
             <div className={styles.areaForm}>
-
+                <ContactForm />
             </div>
         </section>
     )

@@ -1,0 +1,32 @@
+.form{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    .inputsLine{
+        display: grid;
+        gap: 0 10px;
+        width: 100%;
+
+        &.emailCargo{
+            grid-template-columns: 3fr 2fr;
+        }
+
+        &.empresaQuantidade{
+            grid-template-columns: 3fr 2fr;
+        }
+
+        &.estadoCidadeTelefone{
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+    }
+
+    .areaButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
