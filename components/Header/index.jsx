@@ -2,11 +2,16 @@ import styles from './style.module.scss'
 import logo from './images/logo.svg'
 import Image from 'next/image'
 import Button from '../Button'
+import Link from 'next/link'
 
 export default function Header() {
     return(
         <header className={styles.header}>
-            <Image src={logo} alt="Logo oficial da Onfinity" className={styles.logo}/>
+            <Link href="/">
+                <a className={styles.areaLogo}>
+                    <Image src={logo} alt="Logo" className={styles.logo} />
+                </a>
+            </Link>
             <nav className={styles.nav}>
                 <ul className={styles.list}>
                     <li className={styles.item}>
