@@ -1,7 +1,7 @@
 import styles from './style.module.scss'
 import SectionTitle from '../SectionTitle'
 import Button from '../Button'
-import placeholder from  './images/placeholder.webp'
+import weikkiImage from  './images/weikki.png'
 import Image from 'next/image'
 
 export default function Industries() {
@@ -9,7 +9,7 @@ export default function Industries() {
         <section className={styles.industries}>
             <SectionTitle alternative>Nossas <strong>Insdústrias</strong></SectionTitle>
             <div className={styles.industry}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Azeplast</h3>
                     <p className={styles.description}>
@@ -21,7 +21,7 @@ export default function Industries() {
                 </div>
             </div>
             <div className={styles.industry}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Septi</h3>
                     <p className={styles.description}>
@@ -33,8 +33,8 @@ export default function Industries() {
                 </div>
             </div>
             <div className={styles.industry}>
-                <div className={styles.fakeIframe}>
-                    <Image src={placeholder} layout="fill"   />
+                <div className={styles.iframe}>
+                    <Image src={weikkiImage} layout="fill"   />
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Weikki</h3>
