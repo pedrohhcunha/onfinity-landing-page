@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function AreaIcon({ icon, alt }) {
     return(
         <div className={styles.areaIcon}>
-            <Image src={icon} alt={alt ?? "Icone"} />
+            <Image className={styles.icon} src={icon} alt={alt ?? "Icone"} />
         </div>
     )
 }
