@@ -2,6 +2,7 @@ import styles from './style.module.scss'
 import Image from 'next/image'
 import SectionTitle from '../SectionTitle'
 import placeholder from './images/placeholder.jpeg'
+import HorizontalCircles from '../horizontalCircles'
 
 export default function Purpose(){
     return (
@@ -15,6 +16,7 @@ export default function Purpose(){
             <div className={styles.areaImage}>
                 <Image src={placeholder} alt="Purpose" layout="fill" objectFit='cover' />
             </div>
+            <HorizontalCircles left="0" top="246px" />
         </section>
     )
 }

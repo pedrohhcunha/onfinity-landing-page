@@ -13,6 +13,7 @@ import image5 from './images/5.png'
 import image6 from './images/6.png'
 import image7 from './images/7.png'
 import image8 from './images/8.png'
+import HorizontalCircles from '../HorizontalCircles'
 
 export default function Mix() {
 
@@ -115,6 +116,7 @@ export default function Mix() {
                         {slideItems.length >= 1 ?
                             slideItems.map(item => (
                                 <li key={item.id} className={styles.item}>
+                                    <HorizontalCircles left="27%" top="-25px" />
                                     <div className={styles.areaImage}>
                                         <Image src={item.image} alt="mix" layout='fill' />
                                     </div>

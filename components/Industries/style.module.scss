@@ -10,7 +10,8 @@
         align-items: center;
         justify-content: space-between;
         gap: 100px;
-        margin-top: 50px;
+        padding-top: 50px;
+        position: relative;
 
         &:nth-child(2n){
             flex-direction: row-reverse;

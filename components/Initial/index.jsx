@@ -2,6 +2,7 @@ import styles from './style.module.scss'
 import Button from '../Button'
 import logo from './images/logo.svg'
 import Image from 'next/image'
+import HorizontalCircles from '../horizontalCircles'
 
 export default function Initial() {
     return(
@@ -18,6 +19,7 @@ export default function Initial() {
             <div className={styles.imageArea}>
                 <Image src={logo} alt="Onfinity" />
             </div>
+            <HorizontalCircles right="0" top="228px" />
         </section>
     )
 }
