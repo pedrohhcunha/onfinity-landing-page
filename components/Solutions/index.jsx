@@ -24,44 +24,44 @@ export default function Solutions() {
     const listItems = [
         {
             icon: icon1,
-            title: "Embalagens e descartáveis",
-            description: "O Hospital é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
-            image: descartaveis
-        },
-        {
-            icon: icon2,
-            title: "Epis",
-            description: "O EPIS é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
+            title: "EPI's",
+            description: "Capacetes  |  Botas  |  Botinas  |  Cremes para mãos | Cintos de segurança  |  Abafadores  |  Óculos | EPI's para trabalho em altura",
             image: epis
         },
         {
-            icon: icon3,
-            title: "Escritório e informática",
-            description: "O Escritório é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
-            image: escritorio
-        },
-        {
-            icon: icon4,
+            icon: icon2,
             title: "Higiene e limpeza",
-            description: "O Limpeza é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
+            description: "Sacos para lixo  |  Detergentes e saneantes  |  Caixas coletoras  Vassouras, rodos e mops  |  Limpadores e acessórios | Lixeiras  |  Panos e fibras  |  Baldes e cestos",
             image: limpeza
         },
         {
-            icon: icon5,
+            icon: icon3,
+            title: "Uniformes",
+            description: "Camisas  |  Camisetas  |  Polos | Macacões  |  Moletons  |  Calças | Jalecos  | Jaquetas e coletes",
+            image: uniformes
+        },
+        {
+            icon: icon4,
             title: "Materiais médicos",
-            description: "O Material é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
+            description: "Aventais, campos e kits cirúrgicos  |  Luvas, máscaras, toucas e propés  |  Capas para barreiras microbiológicas  |  Panos e Wipers | Seringas, equipos e sondas  |  Fitas crepes, indicadoras e esparadrapos  |  Ataduras, compressas e curativos",
             image: material
+        },
+        {
+            icon: icon5,
+            title: "Embalagens e descartáveis",
+            description: "Filmes Termoencolhiveis  |  Bobinas   |  Sacos plásticos | Embalagens para esterilização  |  Copos | Pratos e talheres  |  Potes   |  Papéis  |  Dispensers",
+            image: descartaveis
         },
         {
             icon: icon6,
             title: "Suprimentos industriais",
-            description: "O Suprimento é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
+            description: "Soldas e abrasivos  |  Ferramentas manuais  |  Ferramentas elétricas | Ferramentas a bateria  |  Parafusos e fixadores  |  Máquinas e equipamentos  |  Acessórios em geral  |  Equipamentos hidráulicos",
             image: suprimento
         },
         {
             icon: icon7,
-            title: "Uniformes",
-            description: "O Uniformes é um espaço de atendimento, cujo objetivo é a prevenção e tratamento de doenças, bem como a promoção de saúde e bem-estar, com o objetivo de ajudar a população a se sentir bem-estar e segurança.",
+            title: "Escritório e informática",
+            description: "Papel A4  |  Canetas, lápis e pincéis  |  Autoadesivos | Grampos  |  Cadernos e blocos  |  Colas, fitas e apontadores Móveis e cadeiras  |  Teclados e mouses",
             image: uniformes
         }
     ]
