@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
-import placeholder from './images/placeholder.webp'
+import placeholder from './images/placeholder.jpg'
 import SectionTitle from '../SectionTitle'
 
 export default function About() {

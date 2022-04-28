@@ -1,7 +1,7 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
 import SectionTitle from '../SectionTitle'
-import placeholder from './images/placeholder.jpg'
+import placeholder from './images/placeholder.jpeg'
 
 export default function Purpose(){
     return (
