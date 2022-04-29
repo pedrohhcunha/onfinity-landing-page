@@ -136,4 +136,23 @@
             gap: 15px;
         }
     }
+
+    @media (max-width: 992px){
+        .areaArticle{
+            
+            .firstArticle{
+                padding: 60px 5%;
+            }
+            .article{
+                padding: 60px 5%;
+
+                flex-direction: column;
+                height: auto;
+            }
+        }
+        .list{
+            padding: 60px 5%;
+            gap: 15px;
+        }
+    }
 }
