@@ -19,7 +19,7 @@
 
     .list{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         grid-gap: 40px;
         list-style: none;
 
@@ -30,8 +30,10 @@
             gap: 10px;
 
             .areaIcon{
-                width: 58px;
-                height: 58px;
+                min-width: 58px;
+                max-width: 58px;
+                min-height: 58px;
+                max-height: 58px;
                 border-radius: 50%;
                 background-color: var(--primary);
                 display: flex;
@@ -40,6 +42,7 @@
             }
 
             .text{
+                width: calc(100% - 68px);
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 20px;
