@@ -17,7 +17,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 50px;
+        gap: 3rem;
 
         .list{
             height: 100%;
@@ -42,11 +42,11 @@
                     align-items: center;
                     justify-content: center;
                     height: 100%;
-                    padding: 0 20px;
+                    padding: 0 1.25rem;
                     cursor: pointer;
                     transition: all .3s;
                     font-weight: 500;
-                    font-size: 14px;
+                    font-size: .8rem;
                     line-height: 18px;
                     letter-spacing: 0.2px;
                     color: var(--thirdy);
@@ -87,6 +87,14 @@
                     }
                 }   
             }
+        }
+    }
+
+    @media (max-width: 1200px){
+        padding: 0 9%;
+
+        .nav{
+            gap: 1rem;
         }
     }
 }

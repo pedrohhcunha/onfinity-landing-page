@@ -6,6 +6,10 @@
   --thirdy: #072249;
   --error: #ba1a1a;
   --padding-horizontal: 12%;
+  --phone-size: 576px;
+  --tablet-size: 768px;
+  --desktop-size: 992px;
+  --large-desktop-size: 1200px;
 }
 
 *{
