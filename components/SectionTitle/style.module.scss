@@ -4,8 +4,8 @@
     line-height: 56px;
     letter-spacing: 0.2px;
     color: var(--neutral);
-    margin-left: -25px;
     margin-top: 50px;
+    position: relative;
 
     strong{
         color: var(--secondary);
@@ -18,9 +18,8 @@
     &::before{
         content: url('./icons/triangulo.svg');
         width: 30px;
-        position: relative;
+        position: absolute;
         top: -50px;
-        left: 30px;
     }
 
 
