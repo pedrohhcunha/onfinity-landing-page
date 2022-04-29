@@ -5,7 +5,6 @@ export default function HorizontalCircles({ top, left, right, bottom }) {
     return(
         <aside style={{
             position: 'absolute',
-            zIndex: '1000',
             top: top,
             left: left,
             right: right,
