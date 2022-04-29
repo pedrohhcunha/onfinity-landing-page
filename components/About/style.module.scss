@@ -40,4 +40,11 @@
         padding: 60px 9%;
 
     }
+
+    @media (max-width: 992px){
+        
+        padding: 60px 5%;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
 }
