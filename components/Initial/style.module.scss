@@ -5,21 +5,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     position: relative;
 
     .contentArea{
-        width: 100%;
-        gap: 20px;
+        width: 60%;
 
         .title{
             font-weight: 700;
-            font-size: 44px;
-            line-height: 56px;
+            font-size: 2.75rem;
+            line-height: 3.5rem;
             letter-spacing: 0.2px;
             color: var(--neutral);
+            position: relative;
 
             strong{
                 color: var(--secondary);
+            }
+
+            &::before{
+                content: url('./icons/triangulo.svg');
+                position: absolute;
+                top: -50px;
             }
         }
 
@@ -37,9 +44,24 @@
     }
 
     .imageArea{
-        width: 100%;
+        max-width: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+
+    @media (max-width: 1200px){
+        
+        padding: 60px 9%;
+
+        .contentArea{
+
+            .title{
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+            }
+        }
+
     }
 }
