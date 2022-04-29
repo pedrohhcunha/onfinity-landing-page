@@ -5,10 +5,10 @@
         width: 100%;
         padding: 60px var(--padding-horizontal);
         background-color: var(--primary);
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: stretch;
+        gap: 40px 20px;
 
         .areaInfo{
             color: var(--neutral);
@@ -19,10 +19,9 @@
         width: 100%;
         padding: 60px var(--padding-horizontal);
         background-color: var(--neutral);
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px 20px;
 
         .areaInfo{
             color: var(--thirdy);
@@ -31,13 +30,14 @@
 
     .areaInfo{
         width: 100%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 30px;
 
         .title{
             font-weight: 700;
             font-size: 25px;
-            line-height: 20px;
+            line-height: 28px;
             letter-spacing: 0.2px;
         }
 
@@ -94,5 +94,15 @@
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 1200px){
+        .footerPrimary{
+            padding: 60px 9%;
+        }
+
+        .footerSecondary{
+            padding: 60px 9%;
+        }
     }
 }
