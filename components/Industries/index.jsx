@@ -11,8 +11,10 @@ export default function Industries() {
         <section className={styles.industries}>
             <SectionTitle alternative>Nossas <strong>Insdústrias</strong></SectionTitle>
             <div className={styles.industry}>
-                <HorizontalCircles right="351px" top="20px" />
-                <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className={styles.iframeArea}>
+                    <HorizontalCircles right="351px" top="-20px" />
+                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Azeplast</h3>
                     <p className={styles.description}>
@@ -24,8 +26,10 @@ export default function Industries() {
                 </div>
             </div>
             <div className={styles.industry}>
-                <HorizontalCircles left="251px" top="30px" />
-                <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className={styles.iframeArea}>
+                    <HorizontalCircles right="201px" top="-20px" />
+                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Septi</h3>
                     <p className={styles.description}>
@@ -37,8 +41,8 @@ export default function Industries() {
                 </div>
             </div>
             <div className={styles.industry}>
-                <HorizontalCircles right="201px" top="20px" />
-                <div className={styles.iframe}>
+                <div className={styles.iframeArea}>
+                    <HorizontalCircles right="201px" top="-20px" />
                     <Image src={weikkiImage} layout="fill"   />
                 </div>
                 <div className={styles.areaText}>
