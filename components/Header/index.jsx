@@ -4,9 +4,13 @@ import Image from 'next/image'
 import Button from '../Button'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faBurger } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 
 export default function Header() {
+
+    const [sideMenuActive, setSideMenuActive] = useState(false);
+
     return(
         <header className={styles.header}>
             <Link href="/">
@@ -14,7 +18,7 @@ export default function Header() {
                     <Image src={logo} alt="Logo" className={styles.logo} />
                 </a>
             </Link>
-            <nav className={styles.nav}>
+            <nav className={`${styles.nav} ${sideMenuActive ? styles.active : ''}`}>
                 <ul className={styles.list}>
                     <li className={styles.item}>
                         <a href="#a-onfinity" className={styles.link}>A Onfinity</a>
@@ -36,7 +40,7 @@ export default function Header() {
                     <Button>Comprar agora</Button>
                 </div>
             </nav>
-            <FontAwesomeIcon icon={faBars} className={styles.icon} />
+            <FontAwesomeIcon onClick={() => setSideMenuActive(!sideMenuActive)} icon={faBars} className={styles.icon} />
         </header>
     )
 }

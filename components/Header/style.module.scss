@@ -120,6 +120,9 @@
             width: 100%;
             height: calc(100vh - 82px);
             background: var(--neutral);
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all .3s ease-in;
 
             .list{
                 display: block;
@@ -127,6 +130,10 @@
 
                 .item{
                     height: 50px;
+
+                    .link{
+                        font-size: 1rem;
+                    }
                 }
             }
 
@@ -136,6 +143,11 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 20px;
+            }
+
+            &.active{
+                opacity: 1;
+                transform: translateX(0);
             }
         }
 
