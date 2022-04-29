@@ -3,6 +3,8 @@ import logo from './images/logo.svg'
 import Image from 'next/image'
 import Button from '../Button'
 import Link from 'next/link'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faBurger } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     return(
@@ -30,8 +32,11 @@ export default function Header() {
                         <a href="#trabalhe-consco" className={styles.link}>Trabalhe conosco</a>
                     </li>
                 </ul>
-                <Button>Comprar agora</Button>
+                <div className={styles.areaButton}>
+                    <Button>Comprar agora</Button>
+                </div>
             </nav>
+            <FontAwesomeIcon icon={faBars} className={styles.icon} />
         </header>
     )
 }

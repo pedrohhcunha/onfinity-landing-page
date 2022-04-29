@@ -90,11 +90,54 @@
         }
     }
 
+    .icon{
+        color: var(--thirdy);
+        font-size: 36px;
+        cursor: pointer; 
+        display: none;
+    }
+
     @media (max-width: 1200px){
         padding: 0 9%;
 
         .nav{
             gap: 1rem;
         }
+    }
+
+    @media (max-width: 992px){
+        padding: 0 5%;
+
+        .icon{
+            display: block;
+        }
+
+        .nav{
+            display: block;
+            position: fixed;
+            top: 82px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 82px);
+            background: var(--neutral);
+
+            .list{
+                display: block;
+                height: auto;
+
+                .item{
+                    height: 50px;
+                }
+            }
+
+            .areaButton{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+
     }
 }
