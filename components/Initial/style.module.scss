@@ -18,6 +18,7 @@
             letter-spacing: 0.2px;
             color: var(--neutral);
             position: relative;
+            margin-top: 40px;
 
             strong{
                 color: var(--secondary);
@@ -61,6 +62,25 @@
                 font-size: 2.4rem;
                 line-height: 2.8rem;
             }
+        }
+
+    }
+
+    @media (max-width: 992px){
+        
+        padding: 60px 5%;
+
+        .contentArea{
+            width: 100%;
+
+            .title{
+                font-size: 2.2rem;
+                line-height: 2.6rem;
+            }
+        }
+
+        .imageArea{
+            display: none;
         }
 
     }
