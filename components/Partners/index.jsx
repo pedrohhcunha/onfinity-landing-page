@@ -5,6 +5,7 @@ import Image from 'next/image'
 import image1 from './images/image1.svg'
 import image2 from './images/image2.svg'
 import image3 from './images/image3.svg'
+import VerticalCircles from '../VerticalCircles'
 
 export default function Clients() {
 
@@ -23,6 +24,7 @@ export default function Clients() {
                     <Image src={image3} alt="" className={styles.image} />
                 </li>
             </ul>
+            <VerticalCircles top="95%" left="0" />
         </div>
     )
 }

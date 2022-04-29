@@ -3,6 +3,7 @@ import Button from '../Button'
 import logo from './images/logo.svg'
 import Image from 'next/image'
 import HorizontalCircles from '../horizontalCircles'
+import VerticalCircles from '../VerticalCircles'
 
 export default function Initial() {
     return(
@@ -20,6 +21,7 @@ export default function Initial() {
                 <Image src={logo} alt="Onfinity" />
             </div>
             <HorizontalCircles right="0" top="228px" />
+            <VerticalCircles top="95%" left="0" />
         </section>
     )
 }

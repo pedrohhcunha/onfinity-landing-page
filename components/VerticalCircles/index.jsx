@@ -1,7 +1,7 @@
 import circles from './images/circles.svg'
 import Image from 'next/image'
 
-export default function HorizontalCircles({ top, left, right, bottom }) {
+export default function VerticalCircles({ top, left, right, bottom }) {
     return(
         <aside style={{
             position: 'absolute',

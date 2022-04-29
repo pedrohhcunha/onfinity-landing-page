@@ -18,6 +18,7 @@ import Image from 'next/image'
 import SectionTitle from '../SectionTitle'
 import { useState } from 'react'
 import Button from '../Button'
+import VerticalCircles from '../VerticalCircles'
 
 export default function Solutions() {
 
@@ -95,6 +96,7 @@ export default function Solutions() {
                         </article>
                     ))
                 : null}
+                <VerticalCircles right="0" top="0" />
             </div>
             <ul className={styles.list}>
                 {listItems.length >= 1 ?
@@ -106,6 +108,7 @@ export default function Solutions() {
                     ))
                 : null}
             </ul>
+            <VerticalCircles top="95%" left="0" />
         </section>
     )
 }

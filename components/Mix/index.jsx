@@ -14,6 +14,7 @@ import image6 from './images/6.png'
 import image7 from './images/7.png'
 import image8 from './images/8.png'
 import HorizontalCircles from '../HorizontalCircles'
+import VerticalCircles from '../VerticalCircles'
 
 export default function Mix() {
 
@@ -127,6 +128,7 @@ export default function Mix() {
                     </ul>
                 </div>
             </div>
+            <VerticalCircles top="95%" right="0" />
         </section>
     )
 }

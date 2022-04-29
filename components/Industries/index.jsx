@@ -4,6 +4,7 @@ import Button from '../Button'
 import weikkiImage from  './images/weikki.png'
 import Image from 'next/image'
 import HorizontalCircles from '../HorizontalCircles'
+import VerticalCircles from '../VerticalCircles'
 
 export default function Industries() {
     return(
@@ -48,6 +49,7 @@ export default function Industries() {
                     <Button>Compre Weikki</Button>
                 </div>
             </div>
+            <VerticalCircles top="92%" left="0" />
         </section>
     )
 }

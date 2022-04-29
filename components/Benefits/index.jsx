@@ -6,8 +6,8 @@ import icon2 from './images/icon2.svg'
 import icon3 from './images/icon3.svg'
 import icon4 from './images/icon4.svg'
 import icon5 from './images/icon5.svg'
-import Image from 'next/image'
 import AreaIcon from '../AreaIcon'
+import VerticalCircles from '../VerticalCircles'
 
 export default function Benefits(){
     return(
@@ -45,6 +45,8 @@ export default function Benefits(){
                 </li>
             </ul>
             <Button>Fale com um especialista</Button>
+            <VerticalCircles top="95%" right="0" />
+            
         </section>
     )
 }
