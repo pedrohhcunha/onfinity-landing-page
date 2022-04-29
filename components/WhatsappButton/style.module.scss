@@ -1,5 +1,6 @@
 .whatsappButton{
     position: fixed;
+    z-index: 10000;
     bottom: 60px;
     right: 20px;
     transition: all .3s;
