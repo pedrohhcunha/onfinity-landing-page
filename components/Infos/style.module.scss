@@ -33,4 +33,9 @@
             opacity: .7;
         }
     }
+
+    @media (max-width: 922px){
+        padding: 50px 5%;
+        gap: 20px;
+    }
 }
