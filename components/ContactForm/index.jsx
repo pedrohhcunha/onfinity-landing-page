@@ -4,7 +4,7 @@ import { useState } from 'react'
 import AreaSelect from '../AreaSelect'
 import Button from '../Button'
 import AreaCheckbox from '../AreaCheckbox'
-
+import axios from 'axios'
 export default function ContactForm() {
 
     const produtos_de_interesse = [
@@ -35,7 +35,7 @@ export default function ContactForm() {
 
     const [loading, setLoading] = useState(false);
 
-    const sendData = event => {
+    const sendData = async event => {
         event.preventDefault()
         console.log(formData)
 
@@ -102,6 +102,33 @@ export default function ContactForm() {
             if(auxErrors.length >= 1){
                 setLoading(false)
                 return setErrors(auxErrors)
+            }
+
+            try{
+                const response = axios.post(`/api/contact`, formData)
+
+                if(response.status === 200 && response.data.success){
+                    setLoading(false)
+                    return setFormData({
+                        nome: '',
+                        email: '',
+                        cargo: '',
+                        empresa: '',
+                        quantidade_de_funcionarios: '',
+                        segmento: '',
+                        estado: '',
+                        cidade: '',
+                        telefone: '',
+                        produtos_de_interesse: []
+                    })
+                } else {
+                    setLoading(false)
+                    alert('Erro ao enviar formulário')
+                }
+                
+            } catch(error){
+                setLoading(false)
+                alert("Erro ao enviar formulário")
             }
         }
     }
