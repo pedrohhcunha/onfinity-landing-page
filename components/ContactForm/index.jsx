@@ -105,8 +105,8 @@ export default function ContactForm() {
             }
 
             try{
-                const response = axios.post(`/api/contact`, formData)
-
+                const response = await axios.post(`/api/contact`, formData)
+                
                 if(response.status === 200 && response.data.success){
                     setLoading(false)
                     return setFormData({
@@ -121,14 +121,13 @@ export default function ContactForm() {
                         telefone: '',
                         produtos_de_interesse: []
                     })
-                } else {
-                    setLoading(false)
-                    alert('Erro ao enviar formulário')
                 }
-                
+                setLoading(false)
+                return alert('Erro ao enviar formulário')
+
             } catch(error){
                 setLoading(false)
-                alert("Erro ao enviar formulário")
+                return alert(error)
             }
         }
     }
