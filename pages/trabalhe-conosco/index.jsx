@@ -79,7 +79,7 @@ export default function TrabalheConosco(props){
             id: 1
         }).
         then((response) => {
-            //setVagasSepti(response.data)
+            setVagasSepti(response.data)
         })
     }, []);
 
