@@ -2,7 +2,6 @@ import styles from './style.module.scss'
 import Image from 'next/image'
 import placeholder from './images/placeholder.jpg'
 import SectionTitle from '../SectionTitle'
-import HorizontalCircles from '../horizontalCircles'
 
 export default function About() {
     return(
