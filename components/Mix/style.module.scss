@@ -69,4 +69,30 @@
     @media (max-width: 1200px){
         padding: 60px 9%;
     }
+
+    @media (max-width: 600px){
+        padding: 60px 5%;
+
+        .listArea{
+
+            .arrow{
+                display: none;
+            }
+
+            .wrapper{
+                .list{
+                    gap: 0px;
+
+                    .item{
+                        
+                        .areaImage{
+
+                            width: 90vw;
+                            height: 90vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
