@@ -7,14 +7,8 @@ export default function AreaCheckbox({ label, required, options = [] }) {
             <div className={styles.checkboxes}>
                 {options.length >= 1 ?
                     options.map(option => (
-                        <div className={styles.checkbox}>
-                            <label htmlFor={option.label} key={option.label} className={`${styles.labelCheck} ${option.checked ? styles.checked : ''}`}>{option.name}</label>
-                            <input
-                                type="checkbox"
-                                name={option.label}
-                                id={option.label}
-                                className={styles.input}
-                            />
+                        <div onClick={option.onClick} className={`${styles.checkbox} ${option.selected ? styles.selected : ''}`}>
+                            {option.name}
                         </div>
                     ))
                 : null}

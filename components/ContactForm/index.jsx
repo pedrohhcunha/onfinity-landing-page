@@ -7,6 +7,17 @@ import AreaCheckbox from '../AreaCheckbox'
 
 export default function ContactForm() {
 
+    const produtos_de_interesse = [
+        "Higiêne e limpeza",
+        "Materias para escritório",
+        "EPI\'s",
+        "Uniformes",
+        "Materias médicos",
+        "Embalagens",
+        "Suprimentos industrias",
+        "Descatáveis"
+    ]
+
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
@@ -17,48 +28,7 @@ export default function ContactForm() {
         estado: '',
         cidade: '',
         telefone: '',
-        produtos_de_interesse: [
-            {
-                name: 'Higiêne e limpeza',
-                label: 'higiene_e_limpeza',
-                value: false
-            },
-            {
-                name: 'Materiais para escritório',
-                label: 'materiais_para_escritorio',
-                value: false
-            },
-            {
-                name: 'EPI\'s',
-                label: 'epis',
-                value: false
-            },
-            {
-                name: 'Uniformes',
-                label: 'uniformes',
-                value: false
-            },
-            {
-                name: 'Materiais médicos',
-                label: 'materiais_medicos',
-                value: false
-            },
-            {
-                name: 'Embalagens',
-                label: 'embalagens',
-                value: false
-            },
-            {
-                name: 'Suprimentos industriais',
-                label: 'suprimentos_industriais',
-                value: false
-            },
-            {
-                name: 'Descartáveis',
-                label: 'descartaveis',
-                value: false
-            }
-        ]
+        produtos_de_interesse: []
     });
 
     const [errors, setErrors] = useState([]);
@@ -269,11 +239,20 @@ export default function ContactForm() {
             </div>
             <AreaCheckbox
                 label="Produtos de interesse"
-                options={formData.produtos_de_interesse.map(item => {
+                options={produtos_de_interesse.map(produto => {
                     return {
-                        name: item.name,
-                        label: item.label,
-                        value: item.value
+                        name: produto,
+                        selected: formData.produtos_de_interesse.includes(produto),
+                        onClick: () => {
+                            let aux = formData.produtos_de_interesse
+
+                            if(aux.includes(produto)){
+                                aux = aux.filter(p => p !== produto)
+                            } else {
+                                aux.push(produto)
+                            }
+                            setFormData({ ...formData, produtos_de_interesse: aux })
+                        }
                     }
                 })}
                 error={errors.find(error => error.field === 'produtos_de_interesse')?.message}

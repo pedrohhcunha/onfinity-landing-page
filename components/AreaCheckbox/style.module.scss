@@ -23,7 +23,7 @@
         flex-wrap: wrap;
         gap: 10px;
 
-        .labelCheck{
+        .checkbox{
             height: 38px;
             padding: 0 20px;
             background-color: var(--neutral);
@@ -44,10 +44,12 @@
                 filter: brightness(.9);
             }
 
-        }
+            &.selected{
+                background-color: var(--primary);
+                color: var(--neutral);
+                border: 1px solid var(--primary);
+            }
 
-        .input{
-            display: none;
         }
     }
 }
