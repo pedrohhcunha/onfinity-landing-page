@@ -11,6 +11,7 @@ import Head from 'next/head'
 import axios from 'axios'
 
 import { useState, useEffect } from 'react'
+import Button from '../../components/Button'
 
 export default function TrabalheConosco(props){
 
@@ -18,7 +19,18 @@ export default function TrabalheConosco(props){
 
     const [stateModalVaga, setStateModalVaga] = useState(0);
 
-    const [vagasSepti, setVagasSepti] = useState([])
+    const [vagasSepti, setVagasSepti] = useState([
+        {
+            "id": 10,
+            "titulo": "Banco de Talentos",
+            "responsabilidades": "Cadastre-se no banco de talentos da Weikki!\r\n",
+            "requisitos": "Buscamos pessoas proativas, que tenham facilidade de trabalho em equipe e que desejam crescer no âmbito pessoal e profissional.",
+            "beneficios": "Cadastre-se no banco de talentos da Weikki!",
+            "imagem_url": "1648042707809.png",
+            "ordem": 2,
+            "is_active": true
+        }
+    ])
 
     const [vagaAtual, setVagaAtual] = useState(0);
 
@@ -33,8 +45,8 @@ export default function TrabalheConosco(props){
     const sendForm = event => {
         event.preventDefault()
         
-        var finalData = new FormData();
-        var imagefile = document.querySelector('#curriculum');
+        const finalData = new FormData();
+        const imagefile = document.querySelector('#curriculum');
         
         finalData.append("image", imagefile.files[0]);
         finalData.append("nome", newVaga.name)
@@ -64,10 +76,10 @@ export default function TrabalheConosco(props){
     //Bloquendo scroll quando o modal estiver aberto
     useEffect(() => {
         axios.post(`${process.env.NEXT_PUBLIC_INTRANET_API}/vagas_company`, {
-            id: 4
+            id: 1
         }).
         then((response) => {
-            setVagasSepti(response.data)
+            //setVagasSepti(response.data)
         })
     }, []);
 
