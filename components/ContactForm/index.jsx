@@ -56,13 +56,13 @@ export default function ContactForm() {
                     message: 'O email deve ter mais de 5 caracteres'
                 })
             }
-            if(formData.cargo.length <= 5){
+            if(formData.cargo.length <= 2){
                 auxErrors.push({
                     field: 'cargo',
                     message: 'O cargo deve ter mais de 2 caracteres'
                 })
             }
-            if(formData.empresa.length <= 5){
+            if(formData.empresa.length <= 2){
                 auxErrors.push({
                     field: 'empresa',
                     message: 'O nome da sua empresa deve ter mais de 2 caracteres'
