@@ -8,14 +8,14 @@ import axios from 'axios'
 export default function ContactForm() {
 
     const produtos_de_interesse = [
-        "Higiêne e limpeza",
-        "Materias para escritório",
+        "Higiene e limpeza",
+        "Materiais para escritório",
         "EPI\'s",
         "Uniformes",
-        "Materias médicos",
+        "Materiais médicos",
         "Embalagens",
         "Suprimentos industrias",
-        "Descatáveis"
+        "Descartáveis"
     ]
 
     const [formData, setFormData] = useState({
