@@ -116,13 +116,14 @@
             display: block;
             position: fixed;
             top: 82px;
-            left: 0;
-            width: 100%;
+            right: 0;
+            width: 350px;
             height: calc(100vh - 82px);
             background: var(--neutral);
             opacity: 0;
             transform: translateX(100%);
             transition: all .3s ease-in;
+            box-shadow: inset -2px 0px 4px rgba(0, 0, 0, 0.1);
 
             .list{
                 display: block;
