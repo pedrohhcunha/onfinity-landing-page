@@ -13,7 +13,7 @@ export default function Industries() {
             <div className={styles.industry}>
                 <div className={styles.iframeArea}>
                     <HorizontalCircles right="351px" top="-20px" />
-                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Azeplast</h3>
@@ -28,7 +28,7 @@ export default function Industries() {
             <div className={styles.industry}>
                 <div className={styles.iframeArea}>
                     <HorizontalCircles right="201px" top="-20px" />
-                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Septi</h3>
