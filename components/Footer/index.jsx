@@ -18,7 +18,7 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className={styles.areaInfo}>
+                {/* <div className={styles.areaInfo}>
                     <h3 className={styles.title}>Conteúdos</h3>
                     <ul className={styles.list}>
                         <li className={styles.item}>
@@ -31,7 +31,7 @@ export default function Footer() {
                             <a href="#" className={styles.link}>Catálogo Onfinity Facilities </a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className={styles.areaInfo}>
                     <h3 className={styles.title}>Contatos</h3>
                     <p className={styles.paragraph}>
