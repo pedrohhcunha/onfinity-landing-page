@@ -21,7 +21,7 @@ export default function Initial() {
                 <Image src={logo} alt="Onfinity" />
             </div>
             <HorizontalCircles right="0" top="228px" />
-            <VerticalCircles top="95%" left="0" />
+            <VerticalCircles top="95%" right="0" />
         </section>
     )
 }

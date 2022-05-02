@@ -16,7 +16,7 @@ export default function Purpose(){
             <div className={styles.areaImage}>
                 <Image src={placeholder} alt="Purpose" layout="fill" objectFit='cover' />
             </div>
-            <HorizontalCircles left="0" top="246px" />
+            <HorizontalCircles left="0" bottom="246px" />
         </section>
     )
 }
