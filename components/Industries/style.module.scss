@@ -64,4 +64,21 @@
     @media (max-width: 1200px){
         padding: 60px 9%;
     }
+
+    @media (max-width: 992px){
+        padding: 60px 5%;
+        gap: 20px;
+        flex-direction: column;
+
+        .iframeArea{
+            width: 100%;
+            padding-top: calc(100% / 16 * 9); 
+            position: relative;
+
+            .iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
