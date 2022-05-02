@@ -72,7 +72,7 @@ export default function Segments() {
         <section id="segmentos" className={styles.segments}>
             <SectionTitle alternative>Segmentos <strong>Onfinity</strong></SectionTitle>
             <p className={styles.description}>
-                Oferecemos soluções completas em suprimentos corporativos para os mais variados segmentos de mercado. 
+                Oferecemos soluções completas em suprimentos corporativos para os mais variados segmentos de mercado.  
             </p>
             <ul className={styles.list}>
                 {listItems.length >= 1 ?
