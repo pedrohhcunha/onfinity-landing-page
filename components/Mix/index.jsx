@@ -64,16 +64,18 @@ export default function Mix() {
     const [autoCount, setAutoCount] = useState(0);
 
     let scrollSlide = async (direction) => {
-        let firstChildren = slideRef.current.children[0];
-        let secondChildren = slideRef.current.children[1];
-        let pixelBetweenChildrens = secondChildren.getBoundingClientRect().left - firstChildren.getBoundingClientRect().left;
-        if(direction === 'prev'){
-            setScrollSize(scrollSize + pixelBetweenChildrens);
-            setInitialShowedCard(initialShowedCard - 1);
-
-        } else if(direction === 'next') {
-            setScrollSize(scrollSize - pixelBetweenChildrens);
-            setInitialShowedCard(initialShowedCard + 1);
+        if(slideRef.current){
+            let firstChildren = slideRef.current.children[0];
+            let secondChildren = slideRef.current.children[1];
+            let pixelBetweenChildrens = secondChildren.getBoundingClientRect().left - firstChildren.getBoundingClientRect().left;
+            if(direction === 'prev'){
+                setScrollSize(scrollSize + pixelBetweenChildrens);
+                setInitialShowedCard(initialShowedCard - 1);
+    
+            } else if(direction === 'next') {
+                setScrollSize(scrollSize - pixelBetweenChildrens);
+                setInitialShowedCard(initialShowedCard + 1);
+            }
         }
     }
 

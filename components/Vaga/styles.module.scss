@@ -1,0 +1,38 @@
+
+.vaga{
+    color: var(--green);
+    width: 300px;
+
+    .areaImage{
+        background-color: var(--white);
+        box-shadow: -2px 2px 5px #0000001c;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        text-align: left;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .areaImage{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .button{
+        padding: 0 15px;
+        height: 30px;
+        background-color: var(--green);
+        color: var(--white);
+        font-weight: 700;
+        border: none;
+        border-radius: 0 12.5px 0 12.5px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover{
+            filter: brightness(.9);
+            transform: translateY(-5px);
+        }
+    }
+}

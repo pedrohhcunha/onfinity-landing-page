@@ -21,19 +21,21 @@ export default function Header() {
             <nav className={`${styles.nav} ${sideMenuActive ? styles.active : ''}`}>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <a href="#a-onfinity" className={styles.link}>A Onfinity</a>
+                        <a href="/#a-onfinity" className={styles.link}>A Onfinity</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#solucoes" className={styles.link}>Soluções</a>
+                        <a href="/#solucoes" className={styles.link}>Soluções</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#segmentos" className={styles.link}>Segmentos</a>
+                        <a href="/#segmentos" className={styles.link}>Segmentos</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#catalogos" className={styles.link}>Catálogos</a>
+                        <a href="/#catalogos" className={styles.link}>Catálogos</a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#trabalhe-consco" className={styles.link}>Trabalhe conosco</a>
+                        <Link href="/trabalhe-conosco">
+                            <a className={styles.link}>Trabalhe conosco</a>
+                        </Link>
                     </li>
                 </ul>
                 <div className={styles.areaButton}>
