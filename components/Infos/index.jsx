@@ -10,23 +10,23 @@ export default function Infos() {
         <ul className={styles.infos}>
             <li className={styles.info}>
                 <AreaIcon icon={icon1} alt="Icone da informação" />
-                <h4 className={styles.title}>Desde 1991</h4>
-                <h5 className={styles.subTitle}></h5>
+                <h3 className={styles.title}>Desde 1991</h3>
+                <h4 className={styles.subTitle}></h4>
             </li>
             <li className={styles.info}>
                 <AreaIcon icon={icon2} alt="Icone da informação" />
-                <h4 className={styles.title}>Fabricação, importação e distribuição</h4>
-                <h5 className={styles.subTitle}></h5>
+                <h3 className={styles.title}>Fabricação, importação e distribuição</h3>
+                <h4 className={styles.subTitle}></h4>
             </li>
             <li className={styles.info}>
                 <AreaIcon icon={icon3} alt="Icone da informação" />
-                <h4 className={styles.title}>3 unidades fabris</h4>
-                <h5 className={styles.subTitle}></h5>
+                <h3 className={styles.title}>3 unidades fabris</h3>
+                <h4 className={styles.subTitle}></h4>
             </li>
             <li className={styles.info}>
                 <AreaIcon icon={icon4} alt="Icone da informação" />
-                <h4 className={styles.title}>2 Centros de distribuição</h4>
-                <h5 className={styles.subTitle}>Sul e Sudeste</h5>
+                <h3 className={styles.title}>2 Centros de distribuição</h3>
+                <h4 className={styles.subTitle}>Sul e Sudeste</h4>
             </li>
         </ul>   
     )
