@@ -223,7 +223,7 @@ export default function ContactForm() {
                 onChange={event => setFormData({ ...formData, segmento: event.target.value })}
                 options={segmentsOptions.map(segment => {
                     return {
-                        value: segment.id,
+                        value: segment.label,
                         name: segment.label
                     }
                 })}
