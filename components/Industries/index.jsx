@@ -5,16 +5,16 @@ import weikkiImage from  './images/weikki.png'
 import Image from 'next/image'
 import HorizontalCircles from '../HorizontalCircles'
 import VerticalCircles from '../VerticalCircles'
+import YoutubeVideo from '../YoutubeVideo'
 
 export default function Industries() {
     return(
         <section className={styles.industries}>
             <SectionTitle alternative>Nossas <strong>Insdústrias</strong></SectionTitle>
             <div className={styles.industry}>
-                <div className={styles.iframeArea}>
+                <YoutubeVideo url="https://www.youtube.com/embed/_ryi9ibyG18" title="Video instituciuonal da indústria Azeplast.">
                     <HorizontalCircles right="351px" top="-20px" />
-                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="Video instituciuonal da indústria Azeplast." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
+                </YoutubeVideo>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Azeplast</h3>
                     <p className={styles.description}>
@@ -26,10 +26,9 @@ export default function Industries() {
                 </div>
             </div>
             <div className={styles.industry}>
-                <div className={styles.iframeArea}>
+                <YoutubeVideo url="https://www.youtube.com/embed/kiiZvKOqz18" title="Vídeo institucional da indústria Septi.">
                     <HorizontalCircles right="201px" top="-20px" />
-                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="Vídeo institucional da indústria Septi." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
+                </YoutubeVideo>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Septi</h3>
                     <p className={styles.description}>
