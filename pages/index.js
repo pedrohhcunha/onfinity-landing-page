@@ -17,7 +17,11 @@ import WhatsappButton from '../components/WhatsappButton'
 
 export default function Home() {
   return (
-    <>
+    <main style={{
+      scrollBehavior: 'smooth',
+      overflowY: 'scroll',
+      maxHeight: '100vh'
+    }}>
       <Header />
       <Initial />
       <About />
@@ -33,6 +37,6 @@ export default function Home() {
       <Final />
       <Footer />
       <WhatsappButton />
-    </>
+    </main>
   )
 }
