@@ -200,16 +200,13 @@ export default function ContactForm() {
                     value={formData.quantidade_de_funcionarios}
                     onChange={event => setFormData({ ...formData, quantidade_de_funcionarios: event.target.value })}
                     options={[
-                        { value: '1-10', name: '1-10' },
-                        { value: '11-50', name: '11-50' },
-                        { value: '51-100', name: '51-100' },
-                        { value: '101-200', name: '101-200' },
+                        { value: '10-50', name: '10-50' },
+                        { value: '51-200', name: '51-200' },
                         { value: '201-500', name: '201-500' },
                         { value: '501-1000', name: '501-1000' },
-                        { value: '1001-2000', name: '1001-2000' },
-                        { value: '2001-5000', name: '2001-5000' },
+                        { value: '1001-5000', name: '1001-5000' },
                         { value: '5001-10000', name: '5001-10000' },
-                        { value: '10000+', name: '10000+' },
+                        { value: '10000+', name: '10000+' }
                     ]}
                     error={errors.find(error => error.field === 'quantidade_de_funcionarios')?.message}
                     required
