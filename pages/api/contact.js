@@ -1,20 +1,4 @@
 import axios from 'axios';
-import { cnpj } from 'cpf-cnpj-validator'; 
-
-/** Default post body exemplo:
-{
-	"name": "Teste teste",
-    "email": "teste@gmail.com",
-    "job": "Programador",
-    "company": "Onfinity",
-    "employees": "10-50",
-    "segment": "Distribuidora",
-    "state": "SC",
-    "city": "Chapecó",
-    "phone": "49999999999",
-    "products": ["Higiene e limpeza", "Materias para escritório"]
-}
-*/
 
 export default (req, res) => {      
     let nome = req.body.nome

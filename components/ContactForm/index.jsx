@@ -6,6 +6,7 @@ import Button from '../Button'
 import AreaCheckbox from '../AreaCheckbox'
 import axios from 'axios'
 import Router from 'next/router'
+import { useEffect } from 'react'
 
 export default function ContactForm() {
 
@@ -36,6 +37,8 @@ export default function ContactForm() {
     const [errors, setErrors] = useState([]);
 
     const [loading, setLoading] = useState(false);
+
+    const [segmentsOptions, setSegmentsOptions] = useState([]);
 
     const sendData = async event => {
         event.preventDefault()
@@ -135,6 +138,19 @@ export default function ContactForm() {
         }
     }
 
+    useEffect(() => {
+        const fetchData = async () => {
+            let response = await axios.get('/api/segments')
+
+            if(response.status === 200 && response.data.success){
+                return setSegmentsOptions(response.data.segments)
+            }
+            return alert('Erro ao carregar segmentos')
+        }
+
+        fetchData()
+    }, [])
+
     return(
         <form method='POST' onSubmit={sendData} className={styles.form}>
             <AreaInput
@@ -199,12 +215,18 @@ export default function ContactForm() {
                     required
                 />
             </div>
-            <AreaInput
+            <AreaSelect
                 label="Segmento"
                 name="segmento"
-                placeholder="Digite o segmento da sua empresa"
+                placeholder="Selecione..."
                 value={formData.segmento}
                 onChange={event => setFormData({ ...formData, segmento: event.target.value })}
+                options={segmentsOptions.map(segment => {
+                    return {
+                        value: segment.id,
+                        name: segment.label
+                    }
+                })}
                 error={errors.find(error => error.field === 'segmento')?.message}
                 required
             />
