@@ -76,10 +76,10 @@ export default function ContactForm() {
                     message: 'Informe a quantidade de funcionários da sua empresa'
                 })
             }
-            if(formData.segmento.length <= 5){
+            if(formData.segmento.length <= 2){
                 auxErrors.push({
                     field: 'segmento',
-                    message: 'O segmento não pode ter menos de 5 carcteres'
+                    message: 'O segmento não pode ter menos de 2 carcteres'
                 })
             }
             if(!formData.estado){
