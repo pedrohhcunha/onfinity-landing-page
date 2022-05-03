@@ -15,7 +15,7 @@ export default function Header() {
         <header className={styles.header}>
             <Link href="/">
                 <a className={styles.areaLogo}>
-                    <Image src={logo} alt="Logo" className={styles.logo} />
+                    <Image src={logo} alt="Logotipo oficial da Onfinity" className={styles.logo} />
                 </a>
             </Link>
             <nav className={`${styles.nav} ${sideMenuActive ? styles.active : ''}`}>

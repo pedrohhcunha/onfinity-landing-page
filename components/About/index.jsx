@@ -7,7 +7,7 @@ export default function About() {
     return(
         <section id="a-onfinity" className={styles.about}>
             <div className={styles.areaImage}>
-                <Image src={placeholder} layout="fill" objectFit='cover' />
+                <Image alt="Imagem de um escritório com algums materias como canetas, mouses, teclados e papeis." src={placeholder} layout="fill" objectFit='cover' />
             </div>
             <div className={styles.contentArea}>
                 <SectionTitle alternative>A Onfinity</SectionTitle>

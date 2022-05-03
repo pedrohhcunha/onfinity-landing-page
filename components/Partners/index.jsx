@@ -7,7 +7,7 @@ import image2 from './images/image2.svg'
 import image3 from './images/image3.svg'
 import VerticalCircles from '../VerticalCircles'
 
-export default function Clients() {
+export default function Partners() {
 
     return (
         <div className={styles.partners}>
@@ -15,13 +15,13 @@ export default function Clients() {
             <p className={styles.description}>Somos parceiros e representantes de grandes indústrias para entregar as melhores soluções para cada uma das suas necessidades.</p>
             <ul className={styles.list}>
                 <li className={styles.item}>
-                    <Image src={image1} alt="" className={styles.image} />
+                    <Image src={image1} alt="Logo oficial do parceiro Betannin" className={styles.image} />
                 </li>
                 <li className={styles.item}>
-                    <Image src={image2} alt="" className={styles.image} />
+                    <Image src={image2} alt="Logo oficial do parceiro Marluvas" className={styles.image} />
                 </li>
                 <li className={styles.item}>
-                    <Image src={image3} alt="" className={styles.image} />
+                    <Image src={image3} alt="Logo oficial do parceiro Lar plástios" className={styles.image} />
                 </li>
             </ul>
             <VerticalCircles top="95%" left="0" />

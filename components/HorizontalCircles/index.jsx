@@ -11,7 +11,7 @@ export default function HorizontalCircles({ top, left, right, bottom }) {
             right: right,
             bottom: bottom
         }}>
-            <Image src={circles} />
+            <Image alt="Grafismo formado por um conjunto de circulos." src={circles} />
         </aside>
     )
 }

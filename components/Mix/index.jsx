@@ -106,12 +106,12 @@ export default function Mix() {
             <div className={styles.listArea}>
                 {initialShowedCard !== 0 ?
                     <button onClick={() => scrollSlide('prev')} className={`${styles.arrow} ${styles.left}`}>
-                        <Image src={arrowLeft} alt="arrow left"/>
+                        <Image src={arrowLeft} alt="Seta horizontal para a passagem para o próximo item no mix" />
                     </button>
                 : null}
                 {initialShowedCard <= 3 ?
                     <button onClick={() => scrollSlide('next')} className={`${styles.arrow} ${styles.right}`}>
-                        <Image src={arrowRight} alt="arrow right"/>
+                        <Image alt="Seta horizontal para a passagem para o próximo item no mix" src={arrowRight} />
                     </button>
                 : null}
                 <div className={styles.wrapper}>

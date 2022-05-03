@@ -13,7 +13,7 @@ export default function Industries() {
             <div className={styles.industry}>
                 <div className={styles.iframeArea}>
                     <HorizontalCircles right="351px" top="-20px" />
-                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/_ryi9ibyG18" title="Video instituciuonal da indústria Azeplast." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Azeplast</h3>
@@ -28,12 +28,12 @@ export default function Industries() {
             <div className={styles.industry}>
                 <div className={styles.iframeArea}>
                     <HorizontalCircles right="201px" top="-20px" />
-                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className={styles.iframe} src="https://www.youtube.com/embed/kiiZvKOqz18" title="Vídeo institucional da indústria Septi." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Septi</h3>
                     <p className={styles.description}>
-                        A Septi é uma indústria e importadora de materiais médicos, descartáveis e EPI’s que desenvolve e comercializa soluções inovadoras para procedimentos cirúrgicos, ambulatoriais, assistenciais e de diagnósticos. 
+                        A Septi é uma indústria e importadora de materiais médicos, descartáveis e EPI's que desenvolve e comercializa soluções inovadoras para procedimentos cirúrgicos, ambulatoriais, assistenciais e de diagnósticos. 
                         <br /> <br />
                         Possui um portfólio completo em paramentação cirúrgica e não cirúrgica, incluindo aventais, máscaras, campos e kits cirúrgicos e uma linha completa em papeis. 
                     </p>
@@ -43,7 +43,7 @@ export default function Industries() {
             <div className={styles.industry}>
                 <div className={styles.iframeArea}>
                     <HorizontalCircles right="201px" top="-20px" />
-                    <Image src={weikkiImage} layout="fill"   />
+                    <Image alt="Imagem representativa do ambiente da indútria Weikki." src={weikkiImage} layout="fill"   />
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Weikki</h3>

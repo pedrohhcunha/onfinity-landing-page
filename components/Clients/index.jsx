@@ -94,7 +94,7 @@ export default function Clients() {
             <ul className={styles.list}>
                 {listItems.map((item, index) => (
                     <li className={styles.item} key={index}>
-                        <Image src={item.image} alt={item.name} className={styles.image} />
+                        <Image src={item.image} alt={`Logo oficial do cliene ${item.name}`} className={styles.image} />
                     </li>
                 ))}
             </ul>
