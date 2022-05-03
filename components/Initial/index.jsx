@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 import Button from '../Button'
-import logo from './images/logo.png'
+import logo from './images/logo.webp'
 import Image from 'next/image'
 import HorizontalCircles from '../HorizontalCircles'
 import VerticalCircles from '../VerticalCircles'
