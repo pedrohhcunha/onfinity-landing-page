@@ -133,7 +133,7 @@ export default function ContactForm() {
     }
 
     return(
-        <form onSubmit={sendData} className={styles.form}>
+        <form method='POST' onSubmit={sendData} className={styles.form}>
             <AreaInput
                 label="Nome"
                 name="nome"
