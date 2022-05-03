@@ -79,7 +79,7 @@ export default function Segments() {
                     listItems.map((item, index) => (
                         <li key={index} className={styles.item}>
                             <AreaIcon icon={item.icon} alt={`Icon ${item.title}`} />
-                            <h4 className={styles.text}>{item.title}</h4>
+                            <h3 className={styles.text}>{item.title}</h3>
                         </li>
                     ))
                 : null}
