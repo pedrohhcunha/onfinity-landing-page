@@ -5,6 +5,8 @@ import AreaSelect from '../AreaSelect'
 import Button from '../Button'
 import AreaCheckbox from '../AreaCheckbox'
 import axios from 'axios'
+import Router from 'next/router'
+
 export default function ContactForm() {
 
     const produtos_de_interesse = [
@@ -109,7 +111,7 @@ export default function ContactForm() {
                 
                 if(response.status === 200 && response.data.success){
                     setLoading(false)
-                    return setFormData({
+                    setFormData({
                         nome: '',
                         email: '',
                         cargo: '',
@@ -121,6 +123,7 @@ export default function ContactForm() {
                         telefone: '',
                         produtos_de_interesse: []
                     })
+                    Router.push('/obrigado')
                 }
                 setLoading(false)
                 return alert('Erro ao enviar formulário')
