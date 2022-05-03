@@ -3,10 +3,16 @@ import Button from '../../components/Button'
 import Router from 'next/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import HorizontalCircles from '../../components/HorizontalCircles'
+import VerticalCircles from '../../components/VerticalCircles'
 
 export default function Obrigado() {
   return (
     <main className={styles.main}>
+        <HorizontalCircles top="200px" left="0" />
+        <HorizontalCircles top="500px" right="0" />
+        <VerticalCircles right="400px" top="0" />
+        <VerticalCircles left="400px" bottom="0" />
         <div className={styles.content}>
             <FontAwesomeIcon icon={faMailBulk} className={styles.icon} />
             <h1 className={styles.title}>Obrigado!</h1>
