@@ -110,7 +110,18 @@ export default function ContactForm() {
             }
 
             try{
-                const response = await axios.post(`/api/contact`, formData)
+                const response = await axios.post(`/api/contact`, {
+                    nome: formData.nome,
+                    email: formData.email,
+                    cargo: formData.cargo,
+                    empresa: formData.empresa,
+                    quantidade_de_funcionarios: formData.quantidade_de_funcionarios,
+                    segmento: formData.segmento,
+                    estado: formData.estado,
+                    cidade: formData.cidade,
+                    telefone: formData.telefone.replace(/\D/g, ''),
+                    produtos_de_interesse: formData.produtos_de_interesse
+                })
                 
                 if(response.status === 200 && response.data.success){
                     setLoading(false)
@@ -282,6 +293,7 @@ export default function ContactForm() {
                     value={formData.telefone}
                     onChange={event => setFormData({ ...formData, telefone: event.target.value })}
                     error={errors.find(error => error.field === 'telefone')?.message}
+                    mask="(99) 9 9999-9999"
                     required
                 />
             </div>
