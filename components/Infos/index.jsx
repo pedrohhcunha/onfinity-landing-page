@@ -11,17 +11,14 @@ export default function Infos() {
             <li className={styles.info}>
                 <AreaIcon icon={icon1} alt="Icone da informação" />
                 <h3 className={styles.title}>Desde 1991</h3>
-                <h4 className={styles.subTitle}></h4>
             </li>
             <li className={styles.info}>
                 <AreaIcon icon={icon2} alt="Icone da informação" />
                 <h3 className={styles.title}>Fabricação, importação e distribuição</h3>
-                <h4 className={styles.subTitle}></h4>
             </li>
             <li className={styles.info}>
                 <AreaIcon icon={icon3} alt="Icone da informação" />
                 <h3 className={styles.title}>3 unidades fabris</h3>
-                <h4 className={styles.subTitle}></h4>
             </li>
             <li className={styles.info}>
                 <AreaIcon icon={icon4} alt="Icone da informação" />
