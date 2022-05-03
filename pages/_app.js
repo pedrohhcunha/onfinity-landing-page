@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <link rel='canonical' href='https://onfinity.com.br' />
         <title>Onfinity - Suprimentos corporativos</title>
       </Head>
       <Component {...pageProps} />
