@@ -33,7 +33,7 @@ export default function Industries() {
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Septi</h3>
                     <p className={styles.description}>
-                        A Septi é uma indústria e importadora de materiais médicos, descartáveis e EPI's que desenvolve e comercializa soluções inovadoras para procedimentos cirúrgicos, ambulatoriais, assistenciais e de diagnósticos. 
+                        A Septi é uma indústria e importadora de materiais médicos, descartáveis e EPI&apos;s que desenvolve e comercializa soluções inovadoras para procedimentos cirúrgicos, ambulatoriais, assistenciais e de diagnósticos. 
                         <br /> <br />
                         Possui um portfólio completo em paramentação cirúrgica e não cirúrgica, incluindo aventais, máscaras, campos e kits cirúrgicos e uma linha completa em papeis. 
                     </p>
