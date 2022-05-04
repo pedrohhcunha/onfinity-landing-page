@@ -63,7 +63,7 @@ export default function Solutions() {
             icon: icon7,
             title: "Escritório e informática",
             description: "Papel A4  |  Canetas, lápis e pincéis  |  Autoadesivos | Grampos  |  Cadernos e blocos  |  Colas, fitas e apontadores Móveis e cadeiras  |  Teclados e mouses",
-            image: uniformes
+            image: escritorio
         }
     ]
 
