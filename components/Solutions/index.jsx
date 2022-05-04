@@ -53,12 +53,12 @@ export default function Solutions() {
             description: "Filmes Termoencolhiveis  |  Bobinas   |  Sacos plásticos | Embalagens para esterilização  |  Copos | Pratos e talheres  |  Potes   |  Papéis  |  Dispensers",
             image: descartaveis
         },
-        {
-            icon: icon6,
-            title: "Suprimentos industriais",
-            description: "Soldas e abrasivos  |  Ferramentas manuais  |  Ferramentas elétricas | Ferramentas a bateria  |  Parafusos e fixadores  |  Máquinas e equipamentos  |  Acessórios em geral  |  Equipamentos hidráulicos",
-            image: suprimento
-        },
+        // {
+        //     icon: icon6,
+        //     title: "Suprimentos industriais",
+        //     description: "Soldas e abrasivos  |  Ferramentas manuais  |  Ferramentas elétricas | Ferramentas a bateria  |  Parafusos e fixadores  |  Máquinas e equipamentos  |  Acessórios em geral  |  Equipamentos hidráulicos",
+        //     image: suprimento
+        // },
         {
             icon: icon7,
             title: "Escritório e informática",
