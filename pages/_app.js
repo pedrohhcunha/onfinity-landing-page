@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     <ModalProvider>
       <Head>
         <link rel='canonical' href='https://onfinity.com.br' />
-        <meta name="description" content="A sua melhor escolha em suprimentos corporativos. Lhe ajudamos a encontrar soluções nas categorias que mais importam: EPI&apos;s, higiene e limpeza, descartáveis, materiais médicos, materiais para escritório e informática, uniformes, embalagens e suprimentos industriais." />
+        <meta name="description" content="A Onfinity é uma solução completa em suprimentos corporativos, fornecendo a sua empresa produtos de higiene e limpeza, epis, uniformes, materias médicos, embalagens, descatáveis e materias de escritório/informática." />
         <meta name="keywords" content="Onfinity, suprimentos, corporativos, soluções, mercado corporativos, suprimento corporativo, suprimentos corporativos office, apis, uniformes, descartáveis, papel, linha de papéis, higiene e limpeza, higiente, limpeza" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
