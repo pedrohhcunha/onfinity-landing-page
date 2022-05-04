@@ -14,7 +14,6 @@ import Clients from "../components/Clients"
 import Partners from '../components/Partners'
 import Final from '../components/Final'
 import WhatsappButton from '../components/WhatsappButton'
-import Head from 'next/head'
 
 export default function Home() {
   return (

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import HorizontalCircles from '../../components/HorizontalCircles'
 import VerticalCircles from '../../components/VerticalCircles'
-import { Head } from 'next/document';
+import { Head } from 'next/head';
 
 export default function Obrigado() {
   return (
