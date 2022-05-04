@@ -42,7 +42,7 @@ export default function Industries() {
             <div className={styles.industry}>
                 <div className={styles.iframeArea}>
                     <HorizontalCircles right="201px" top="-20px" />
-                    <Image alt="Imagem representativa do ambiente da indútria Weikki." src={weikkiImage} layout="fill"   />
+                    <Image placeholder='blur' alt="Imagem representativa do ambiente da indútria Weikki." src={weikkiImage} layout="fill"   />
                 </div>
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Weikki</h3>

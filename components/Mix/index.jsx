@@ -121,7 +121,7 @@ export default function Mix() {
                                 <li key={item.id} className={styles.item}>
                                     <HorizontalCircles left="27%" top="-25px" />
                                     <div className={styles.areaImage}>
-                                        <Image src={item.image} alt="mix" layout='fill' />
+                                        <Image placeholder='blur' src={item.image} alt="mix" layout='fill' />
                                     </div>
                                     <Button alternative>Comprar agora</Button>
                                 </li>
