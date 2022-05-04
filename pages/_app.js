@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     <ModalProvider>
       <Head>
         <meta charset="UTF-8" />
-        <meta http-equiv="content-language" content="pt-br" />
+        <meta httpEquiv="content-language" content="pt-br" />
         <meta name="description" content="A Onfinity é uma solução completa em suprimentos corporativos, fornecendo a sua empresa produtos de higiene e limpeza, epis, uniformes, materias médicos, embalagens, descatáveis e materias de escritório/informática." />
         <meta name="keywords" content="Onfinity, suprimentos, corporativos, soluções, mercado corporativos, suprimento corporativo, suprimentos corporativos office, apis, uniformes, descartáveis, papel, linha de papéis, higiene e limpeza, higiente, limpeza" />
         <meta name="robots" content="index, follow" />
