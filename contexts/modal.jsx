@@ -8,7 +8,8 @@ const ModalProvider = ({ children }) => {
     return(
         <modalContext.Provider value={{
             modalOpened,
-            closeModal: () => setModalOpened(false)
+            closeModal: () => setModalOpened(false),
+            openModal: () => setModalOpened(true)
         }}>
             { children }
         </modalContext.Provider>
