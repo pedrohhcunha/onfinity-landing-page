@@ -111,9 +111,9 @@ export default function Footer() {
                 </div>
                 <div className={styles.areaInfo}>
                     <h3 className={styles.title}>Unidades de atendimento</h3>
-                    <p className={styles.paragraph}>
+                    <address className={styles.paragraph}>
                         Avenida Porto Alegre 427 D Centro |  Chapecó |  SC <br /> Sala 505 e 506
-                    </p>
+                    </address>
                 </div>
             </div>
             <div className={styles.finalBar}>Onfinity 2022. Todos os direitos reservados </div>
