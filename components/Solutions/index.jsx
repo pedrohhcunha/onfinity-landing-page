@@ -18,6 +18,7 @@ import Image from 'next/image'
 import SectionTitle from '../SectionTitle'
 import { useState } from 'react'
 import Button from '../Button'
+import Link from 'next/link'
 import VerticalCircles from '../VerticalCircles'
 
 export default function Solutions() {
@@ -102,8 +103,12 @@ export default function Solutions() {
                 {listItems.length >= 1 ?
                     listItems.map((item, index) => (
                         <li onClick={() => setItemActive(index)} key={index} className={styles.item}>
-                            <AreaIcon icon={item.icon} alt={`Icone ${item.title}`} />
-                            <h4 className={styles.titleIem}>{item.title}</h4>
+                            <Link href="#solucoes">
+                                <a className={styles.link}>
+                                    <AreaIcon icon={item.icon} alt={`Icone ${item.title}`} />
+                                    <h4 className={styles.titleIem}>{item.title}</h4>
+                                </a>
+                            </Link>
                         </li>
                     ))
                 : null}
