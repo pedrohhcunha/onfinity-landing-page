@@ -5,10 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import HorizontalCircles from '../../components/HorizontalCircles'
 import VerticalCircles from '../../components/VerticalCircles'
+import { Head } from 'next/document';
 
 export default function Obrigado() {
   return (
     <main className={styles.main}>
+        <Head>
+            <title>Onfinity - Obrigado</title>
+            <meta name="title" content="Onfinity - Obrigado" />
+        </Head>
         <HorizontalCircles top="200px" left="0" />
         <HorizontalCircles top="500px" right="0" />
         <VerticalCircles right="400px" top="0" />

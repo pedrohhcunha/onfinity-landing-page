@@ -82,7 +82,8 @@ export default function TrabalheConosco(props){
     return(
         <>
         <Head>
-            <title>Trabalhe Conosco - Weikki</title>
+            <title>Onfinity - Trabalhe conosco</title>
+            <meta name="title" content="Onfinity - Trabalhe conosco" />
         </Head>
         <Header openModal={() => setModalIsActive(true)} />
             <main className={styles.main}>

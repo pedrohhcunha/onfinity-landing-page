@@ -14,6 +14,7 @@ import Clients from "../components/Clients"
 import Partners from '../components/Partners'
 import Final from '../components/Final'
 import WhatsappButton from '../components/WhatsappButton'
+import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
       overflowY: 'scroll',
       maxHeight: '100vh'
     }}>
+      <Head>
+        <title>Onfinity - Uma solução completa em Suprimentos Corporativos</title>
+        <meta name="title" content="Onfinity - Uma solução completa em Suprimentos Corporativos" />
+      </Head>
       <Header />
       <Initial />
       <About />
