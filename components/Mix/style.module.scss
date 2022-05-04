@@ -68,6 +68,23 @@
 
     @media (max-width: 1200px){
         padding: 60px 9%;
+
+        .listArea{
+
+            .wrapper{
+                .list{
+                    gap: calc(calc(100% - 360px) / 2);
+
+                    .item{
+
+                        .areaImage{
+                            width: 180px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @media (max-width: 600px){
