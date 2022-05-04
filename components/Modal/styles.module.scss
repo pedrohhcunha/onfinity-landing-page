@@ -1,0 +1,99 @@
+.areaModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--thirdy-opacity);
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+
+    .modal{
+        background-color: var(--neutral);
+        border-radius: 5px;
+        width: 600px;
+        max-width: 90vw;
+        max-height: 90vh;
+        transform: translate(-10px, 10px);
+        transition: all .3s;
+        position: relative;
+        padding-bottom: 20px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar{
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: var(--thirdy-opacity);
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        .topArea{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            background-color: var(--neutral);
+            top: 0;
+            padding: 0 20px;
+            height: 70px;
+            z-index: 10;
+
+            .title{
+                font-size: 18px;
+                color: var(--thirdy);
+                padding-right: 10px;
+            }
+
+            .icon{
+                color: var(--thirdy);
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+
+        .utilArea{
+            width: 100%;
+            color: var(--thirdy);
+            padding: 0 20px;
+
+            span{
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--thirdy);
+            }
+
+            h3{
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &.active{
+        opacity: 1;
+        pointer-events: all;
+
+        .modal{
+            transform: translate(0, 0);
+        }
+    }
+}
