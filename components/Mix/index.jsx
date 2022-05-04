@@ -63,6 +63,8 @@ export default function Mix() {
 
     const [autoCount, setAutoCount] = useState(0);
 
+    const [autoPlay, setAutoPlay] = useState(true);
+
     let scrollSlide = async (direction) => {
         if(slideRef.current){
             let firstChildren = slideRef.current.children[0];
@@ -80,22 +82,24 @@ export default function Mix() {
     }
 
     useEffect(() => {
-
-        setTimeout(() => {
-            console.log("Delayed for 1 second.")
-            if(initialShowedCard <= 3 && scrollDirectionAuto === 'next'){
-                scrollSlide('next')
-            } else if(initialShowedCard === 4 && scrollDirectionAuto === 'next'){
-                scrollSlide('prev')
-                setScrollDirectionAuto('prev')
-            } else if(initialShowedCard !== 0 && scrollDirectionAuto === 'prev'){
-                scrollSlide('prev')
-            } else if(initialShowedCard === 0 && scrollDirectionAuto === 'prev'){
-                scrollSlide('next')
-                setScrollDirectionAuto('next')
-            }
-            setAutoCount(autoCount + 1)
-        }, 3000)
+        if (autoPlay) {
+            
+            setTimeout(() => {
+                console.log("Delayed for 1 second.")
+                if(initialShowedCard <= 3 && scrollDirectionAuto === 'next'){
+                    scrollSlide('next')
+                } else if(initialShowedCard === 4 && scrollDirectionAuto === 'next'){
+                    scrollSlide('prev')
+                    setScrollDirectionAuto('prev')
+                } else if(initialShowedCard !== 0 && scrollDirectionAuto === 'prev'){
+                    scrollSlide('prev')
+                } else if(initialShowedCard === 0 && scrollDirectionAuto === 'prev'){
+                    scrollSlide('next')
+                    setScrollDirectionAuto('next')
+                }
+                setAutoCount(autoCount + 1)
+            }, 3000)
+        }
 
     }, [autoCount])
 
@@ -105,12 +109,18 @@ export default function Mix() {
 
             <div className={styles.listArea}>
                 {initialShowedCard !== 0 ?
-                    <button onClick={() => scrollSlide('prev')} className={`${styles.arrow} ${styles.left}`}>
+                    <button onClick={() => {
+                        setAutoPlay(false)
+                        scrollSlide('prev')
+                    }} className={`${styles.arrow} ${styles.left}`}>
                         <Image src={arrowLeft} alt="Seta horizontal para a passagem para o próximo item no mix" />
                     </button>
                 : null}
                 {initialShowedCard <= 3 ?
-                    <button onClick={() => scrollSlide('next')} className={`${styles.arrow} ${styles.right}`}>
+                    <button onClick={() => {
+                        setAutoPlay(false)
+                        scrollSlide('next')
+                    }} className={`${styles.arrow} ${styles.right}`}>
                         <Image alt="Seta horizontal para a passagem para o próximo item no mix" src={arrowRight} />
                     </button>
                 : null}
