@@ -14,7 +14,7 @@ export default function About() {
                 <p className={styles.paragraph}>
                     Possuímos um ecossistema que conecta indústrias a clientes finais e que alia big data, inteligência artificial e atendimento comercial consultivo. 
                     <br /> <br />
-                    Isso tudo para lhe ajudar a encontrar soluções nas categorias  que  mais  importam:  EPIs,  higiene  e limpeza, descartáveis, materiais médicos, materiais para escritório, uniformes,  embalagens e suprimentos industriais..
+                    Isso tudo para lhe ajudar a encontrar soluções nas categorias  que  mais  importam:  EPIs,  higiene  e limpeza, descartáveis, materiais médicos, materiais para escritório, uniformes,  embalagens e suprimentos industriais.
                     <br /> <br />
                     Fabricamos, importamos e comercializamos suprimentos corporativos que garantem custos competitivos, alta produtividade e performance no seu ambiente de trabalho.
                 </p>

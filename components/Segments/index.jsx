@@ -27,7 +27,7 @@ export default function Segments() {
             icon: iconIndustrias
         },
         {
-            title: "Agrouindustrias",
+            title: "Agroindústrias",
             icon: iconAgro
         },
         {
@@ -55,11 +55,11 @@ export default function Segments() {
             icon: iconShopping
         },
         {
-            title: "Hoteis e resorts",
+            title: "Hotéis e resorts",
             icon: iconHoteis
         },
         {
-            title: "Contrutoras",
+            title: "Construtoras",
             icon: iconConstrutoras
         },
         {
