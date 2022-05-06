@@ -35,9 +35,9 @@ export default function Footer() {
                 <div className={styles.areaInfo}>
                     <h3 className={styles.title}>Contatos</h3>
                     <p className={styles.paragraph}>
-                        comercial@onfinity.com.br <br />
-                        (49) 3050.1095 <br />
-                        (49) 98829.3779
+                        <a className={styles.linkItem} href="mailto:comercial@onfinity.com.br">comercial@onfinity.com.br</a>
+                        <a className={styles.linkItem} href="tel:554939591095">(49) 3050.1095</a>
+                        <a className={styles.linkItem} href="tel:5549988293779">(49) 98829.3779</a>
                     </p>
                 </div>
                 <div className={styles.areaInfo}>
@@ -116,7 +116,7 @@ export default function Footer() {
                     </address>
                 </div>
             </div>
-            <div className={styles.finalBar}>Onfinity 2022. Todos os direitos reservados </div>
+            <div className={styles.finalBar}>Onfinity 2022. Todos os direitos reservados. </div>
         </footer>
     )
 }
