@@ -14,7 +14,7 @@ export default function Initial() {
                     Se você sabe exatamente o que precisa ou está procurando os insumos corretos para atingir seus objetivos, a Onfinity está aqui para lhe ajudar.
                 </p>
                 <div className={styles.buttonsArea}>
-                    <Button alternative>Faça seu perdido</Button>
+                    <Button alternative>Faça seu pedido</Button>
                 </div>
             </div>
             <div className={styles.imageArea}>
