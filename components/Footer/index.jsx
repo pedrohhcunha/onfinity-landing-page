@@ -112,6 +112,7 @@ export default function Footer() {
                 <div className={styles.areaInfo}>
                     <h3 className={styles.title}>Unidades de atendimento</h3>
                     <address className={styles.paragraph}>
+                        <strong>Escritório</strong> <br />
                         Avenida Porto Alegre 427 D Centro |  Chapecó |  SC <br /> Sala 505 e 506
                     </address>
                 </div>
