@@ -14,7 +14,7 @@ export default function Header() {
     return(
         <header className={styles.header}>
             <Link href="/">
-                <a className={styles.areaLogo}>
+                <a aria-label='Logotipo oficial da Onfinity' className={styles.areaLogo}>
                     <Image src={logo} alt="Logotipo oficial da Onfinity" className={styles.logo} />
                 </a>
             </Link>

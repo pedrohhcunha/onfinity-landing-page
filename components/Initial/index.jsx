@@ -18,7 +18,7 @@ export default function Initial() {
                 </div>
             </div>
             <div className={styles.imageArea}>
-                <Image src={logo} alt="Onfinity" />
+                <Image src={logo} alt="Releitura do logo oficial da onfinity com um plano de fundo em imagens de suprimentos corporativos" />
             </div>
             <HorizontalCircles right="0" top="228px" />
             <VerticalCircles top="95%" right="0" />
