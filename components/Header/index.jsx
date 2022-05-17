@@ -7,12 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 
-export default function Header() {
+export default function Header({ shadow = true }) {
 
     const [sideMenuActive, setSideMenuActive] = useState(false);
 
     return(
-        <header className={styles.header}>
+        <header className={`${styles.header} ${shadow === true ? styles.withShadow : ''}`}>
             <Link href="/">
                 <a aria-label='Logotipo oficial da Onfinity' className={styles.areaLogo}>
                     <Image src={logo} alt="Logotipo oficial da Onfinity" className={styles.logo} />

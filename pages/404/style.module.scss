@@ -1,0 +1,29 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--neutral);
+
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+
+        .errorName{
+            font-size: 8rem;
+            font-weight: bold;
+            color: var(--thirdy);
+            margin: 0;
+            line-height: 12rem;
+        }
+        .errorDescription{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--thirdy);
+        }
+    }
+}
