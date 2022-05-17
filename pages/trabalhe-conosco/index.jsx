@@ -108,7 +108,9 @@ export default function TrabalheConosco(props){
                                 responsabilidades={vaga?.responsabilidades}
                                 requisitos={vaga?.requisitos}
                                 oferecemos={vaga?.beneficios}
-                                openVaga={() => {
+                                openVaga={event => {
+                                    event.preventDefault()
+                                    console.log("Abrindo a vaga " + vaga.id)
                                     setVagaAtual(vaga?.id)
                                     setStateModalVaga(true)
                                 }}
