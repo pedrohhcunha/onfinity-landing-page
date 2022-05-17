@@ -7,6 +7,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Vaga from '../../components/Vaga'
 import Head from 'next/head'
+import Snackbar from '../../components/Snackbar'
 
 import axios from 'axios'
 
@@ -21,6 +22,11 @@ export default function TrabalheConosco(props){
     const [vagasSepti, setVagasSepti] = useState([])
 
     const [vagaAtual, setVagaAtual] = useState(0);
+
+    const [feedback, setFeedback] = useState({
+        open: false,
+        message: '',
+    });
 
     const [newVaga, setNewVaga] = useState({
         name: '',
@@ -58,6 +64,10 @@ export default function TrabalheConosco(props){
             })
 
             setStateModalVaga(false)
+            setFeedback({
+                open: true,
+                message: 'Currículo enviado com sucesso!',
+            })
         })
     }
     
@@ -150,6 +160,12 @@ export default function TrabalheConosco(props){
                     </aside>
                 : null}
             </main>
+            <Snackbar active={true} closeFunction={() => {
+                setFeedback({
+                    ...feedback,
+                    open: false
+                })
+            }}>{feedback.message}</Snackbar>
             <Footer />
         </>
     )

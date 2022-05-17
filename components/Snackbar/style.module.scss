@@ -1,0 +1,27 @@
+.snackbar{
+    position: fixed;
+    bottom: 40px;
+    left: 30px;
+    min-width: 350px;
+    background-color: var(--thirdy);
+    color: var(--neutral);
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    transform: translateY(100px);
+
+    &.active{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &:hover{
+        filter: brightness(.9);
+    }
+}
