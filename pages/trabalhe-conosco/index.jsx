@@ -160,7 +160,7 @@ export default function TrabalheConosco(props){
                     </aside>
                 : null}
             </main>
-            <Snackbar active={true} closeFunction={() => {
+            <Snackbar active={feedback.open} closeFunction={() => {
                 setFeedback({
                     ...feedback,
                     open: false
