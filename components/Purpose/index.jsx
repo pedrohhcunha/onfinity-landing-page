@@ -1,7 +1,7 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
 import SectionTitle from '../SectionTitle'
-import placeholder from './images/placeholder.webp'
+import placeholder from './images/purpose.webp'
 import HorizontalCircles from '../HorizontalCircles'
 
 export default function Purpose(){
