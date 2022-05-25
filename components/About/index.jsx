@@ -12,11 +12,9 @@ export default function About() {
             <div className={styles.contentArea}>
                 <SectionTitle alternative>A Onfinity</SectionTitle>
                 <p className={styles.paragraph}>
-                    Possuímos um ecossistema que conecta indústrias a clientes finais e que alia big data, inteligência artificial e atendimento comercial consultivo. 
-                    <br /> <br />
-                    Isso tudo para lhe ajudar a encontrar soluções nas categorias  que  mais  importam:  EPIs,  higiene  e limpeza, descartáveis, materiais médicos, materiais para escritório, uniformes,  embalagens e suprimentos industriais.
-                    <br /> <br />
-                    Fabricamos, importamos e comercializamos suprimentos corporativos que garantem custos competitivos, alta produtividade e performance no seu ambiente de trabalho.
+                A sua melhor escolha em suprimentos corporativos.
+                <br /> <br />
+                Nós ajudamos a sua empresa a performar mais fornecendo uma ampla variedade de suprimentos nas categorias que mais importam: uniformes; EPI´s; higiene, limpeza e descartáveis; materiais para escritório e informática; materiais médicos e embalagens.
                 </p>
             </div>
         </section>
