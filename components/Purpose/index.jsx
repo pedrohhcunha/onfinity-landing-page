@@ -14,7 +14,7 @@ export default function Purpose(){
                 </p>
             </div>
             <div className={styles.areaImage}>
-                <Image placeholder='blur' src={placeholder} alt="Pessoa mostrando um gráfico com tendência de alta" layout="fill" objectFit='cover' />
+                <Image quality={100} placeholder='blur' src={placeholder} alt="Pessoa mostrando um gráfico com tendência de alta" layout="fill" objectFit='cover' />
             </div>
             <HorizontalCircles left="0" bottom="246px" />
         </section>
