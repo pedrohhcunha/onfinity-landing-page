@@ -7,7 +7,14 @@ export default function About() {
     return(
         <section id="a-onfinity" className={styles.about}>
             <div className={styles.areaImage}>
-                <Image placeholder='blur' alt="Imagem de um escritório com algums materias para suprimentos corporativos como canetas, mouses, teclados e papeis." src={placeholder} layout="fill" objectFit='cover' />
+                <iframe
+                    className={styles.video}
+                    src="https://www.youtube.com/embed/mog6NxjAFSQ"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen 
+                ></iframe>
             </div>
             <div className={styles.contentArea}>
                 <SectionTitle alternative>A Onfinity</SectionTitle>
