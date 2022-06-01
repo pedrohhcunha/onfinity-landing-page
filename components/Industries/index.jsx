@@ -10,7 +10,7 @@ import YoutubeVideo from '../YoutubeVideo'
 export default function Industries() {
     return(
         <section className={styles.industries}>
-            <SectionTitle alternative>Nossas <strong>Insdústrias</strong></SectionTitle>
+            <SectionTitle alternative>Nossas <strong>Indústrias</strong></SectionTitle>
             <div className={styles.industry}>
                 <YoutubeVideo url="https://www.youtube.com/embed/_ryi9ibyG18" title="Video instituciuonal da indústria Azeplast.">
                     <HorizontalCircles right="351px" top="-20px" />
