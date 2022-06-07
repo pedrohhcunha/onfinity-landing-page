@@ -17,13 +17,27 @@ import peccin from './images/peccin.png'
 import prevent from './images/prevent.png'
 import saoJoao from './images/saoJoao.png'
 import unimed from './images/unimed.png'
-import dp from './images/dp.png'
+import minerva from './images/minerva.png'  
+import guima from './images/guima.png'
+import divina from './images/divina.png'
 
 export default function Clients() {
     const listItems = [
         {
             name: "Albert",
             image: albert
+        },
+        {
+            name: "Minerva",
+            image: minerva
+        },
+        {
+            name: "Guima",
+            image: guima
+        },
+        {
+            name: "Divina",
+            image: divina
         },
         {
             name: "Amanco",
@@ -80,10 +94,6 @@ export default function Clients() {
         {
             name: "Unimed",
             image: unimed
-        },
-        {
-            name: "Divina previdência",
-            image: dp
         }
     ]
 

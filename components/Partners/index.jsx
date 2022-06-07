@@ -2,9 +2,10 @@ import styles from './style.module.scss'
 import SectionTitle from '../SectionTitle'
 import Image from 'next/image'
 
-import image1 from './images/image1.svg'
-import image2 from './images/image2.svg'
-import image3 from './images/image3.svg'
+import image1 from './images/image1.png'
+import image2 from './images/image2.png'
+import image3 from './images/image3.png'
+import image4 from './images/image4.png'
 import VerticalCircles from '../VerticalCircles'
 
 export default function Partners() {
@@ -18,10 +19,13 @@ export default function Partners() {
                     <Image src={image1} alt="Logo oficial do parceiro Betannin" className={styles.image} />
                 </li>
                 <li className={styles.item}>
-                    <Image src={image2} alt="Logo oficial do parceiro Marluvas" className={styles.image} />
+                    <Image src={image2} alt="Logo oficial do parceiro Lar plásticos" className={styles.image} />
                 </li>
                 <li className={styles.item}>
-                    <Image src={image3} alt="Logo oficial do parceiro Lar plástios" className={styles.image} />
+                    <Image src={image3} alt="Logo oficial do parceiro MARLUVAS" className={styles.image} />
+                </li>
+                <li className={styles.item}>
+                    <Image src={image4} alt="Logo oficial do parceiro Rio quimica" className={styles.image} />
                 </li>
             </ul>
             <VerticalCircles top="95%" left="0" />
