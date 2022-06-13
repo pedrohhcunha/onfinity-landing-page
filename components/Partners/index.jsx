@@ -24,9 +24,6 @@ export default function Partners() {
                 <li className={styles.item}>
                     <Image src={image3} alt="Logo oficial do parceiro MARLUVAS" className={styles.image} />
                 </li>
-                <li className={styles.item}>
-                    <Image src={image4} alt="Logo oficial do parceiro Rio quimica" className={styles.image} />
-                </li>
             </ul>
             <VerticalCircles top="95%" left="0" />
         </div>
