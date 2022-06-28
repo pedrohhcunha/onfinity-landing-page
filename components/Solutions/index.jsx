@@ -10,7 +10,8 @@ import epis from './images/epis.webp'
 import escritorio from './images/escritorio.webp'
 import limpeza from './images/limpeza.webp'
 import material from './images/material.webp'
-import uniformes from './images/uniformes.webp'
+import uniformes from './images/uniformes.png'
+import embalagens from './images/embalagens.png'
 import AreaIcon from '../AreaIcon'
 import Image from 'next/image'
 import SectionTitle from '../SectionTitle'
@@ -23,6 +24,12 @@ export default function Solutions() {
 
     const listItems = [
         {
+            icon: icon3,
+            title: "Uniformes",
+            description: "Camisas  |  Camisetas  |  Polos | Macacões  |  Moletons  |  Calças | Jalecos  | Jaquetas e coletes",
+            image: uniformes
+        },
+        {
             icon: icon1,
             title: "EPI's",
             description: "Capacetes  |  Botas  |  Botinas  |  Cremes para mãos | Cintos de segurança  |  Abafadores  |  Óculos | EPI's para trabalho em altura",
@@ -30,15 +37,15 @@ export default function Solutions() {
         },
         {
             icon: icon2,
-            title: "Higiene e limpeza",
-            description: "Sacos para lixo  |  Detergentes e saneantes  |  Caixas coletoras  Vassouras, rodos e mops  |  Limpadores e acessórios | Lixeiras  |  Panos e fibras  |  Baldes e cestos",
+            title: "Higiene, Limpeza e Descartáveis",
+            description: "Sacos para lixo | Papéis | Pratos e talheres | Copos Dispensers | Detergentes e saneantes | Limpadores e acessórios | Baldes e cestos | Lixeiras | Potes",
             image: limpeza
         },
         {
-            icon: icon3,
-            title: "Uniformes",
-            description: "Camisas  |  Camisetas  |  Polos | Macacões  |  Moletons  |  Calças | Jalecos  | Jaquetas e coletes",
-            image: uniformes
+            icon: icon7,
+            title: "Escritório e informática",
+            description: "Papel A4  |  Canetas, lápis e pincéis  |  Autoadesivos | Grampos  |  Cadernos e blocos  |  Colas, fitas e apontadores | Móveis e cadeiras  |  Teclados e mouses",
+            image: escritorio
         },
         {
             icon: icon4,
@@ -48,21 +55,9 @@ export default function Solutions() {
         },
         {
             icon: icon5,
-            title: "Embalagens e descartáveis",
-            description: "Filmes Termoencolhiveis  |  Bobinas   |  Sacos plásticos | Embalagens para esterilização  |  Copos | Pratos e talheres  |  Potes   |  Papéis  |  Dispensers",
-            image: descartaveis
-        },
-        // {
-        //     icon: icon6,
-        //     title: "Suprimentos industriais",
-        //     description: "Soldas e abrasivos  |  Ferramentas manuais  |  Ferramentas elétricas | Ferramentas a bateria  |  Parafusos e fixadores  |  Máquinas e equipamentos  |  Acessórios em geral  |  Equipamentos hidráulicos",
-        //     image: suprimento
-        // },
-        {
-            icon: icon7,
-            title: "Escritório e informática",
-            description: "Papel A4  |  Canetas, lápis e pincéis  |  Autoadesivos | Grampos  |  Cadernos e blocos  |  Colas, fitas e apontadores Móveis e cadeiras  |  Teclados e mouses",
-            image: escritorio
+            title: "Embalagens",
+            description: 'Filmes Termoencolhíveis | Bobinas Sacos plásticos | Filme Stretch | Embalagens para food',
+            image: embalagens
         }
     ]
 

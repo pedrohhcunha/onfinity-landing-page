@@ -10,7 +10,7 @@ export default function Purpose(){
             <div className={styles.contentArea}>
                 <SectionTitle>Nosso <strong>propósito</strong></SectionTitle>
                 <p className={styles.paragraph}>
-                    Trabalhamos incansavelmente todos os dias para entregar o nosso propósito de melhorar a rentabilidade dos nossos clientes.
+                Trabalhamos todos os dias para entregar o nosso propósito: melhorar a rentabilidade dos nossos clientes.
                 </p>
             </div>
             <div className={styles.areaImage}>
