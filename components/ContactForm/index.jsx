@@ -11,14 +11,12 @@ import { useEffect } from 'react'
 export default function ContactForm() {
 
     const produtos_de_interesse = [
-        "Higiene e limpeza",
-        "Materiais para escritório",
-        "EPI\'s",
         "Uniformes",
+        "EPI\'s",
+        "Higiene, limpeza e descartáveis",
+        "Escritório e informática",
         "Materiais médicos",
         "Embalagens",
-        "Suprimentos industrias",
-        "Descartáveis"
     ]
 
     const [formData, setFormData] = useState({

@@ -47,7 +47,7 @@ export default function Industries() {
                 <div className={styles.areaText}>
                     <h3 className={styles.title}>Weikki</h3>
                     <p className={styles.description}>
-                        A Weikki é uma indústria de uniformes corporativos, executivos e industriais com mais de 26 anos de mercado. Seus produtos seguem tendências em design, segurança e bem-estar e são ideais para todos os tipos de negócios, desde atendimento ao público até os setores industriais, alimentícios, de saúde e construção civil.
+                    A Weikki é uma indústria de uniformes corporativos, executivos e industriais e distribuidora de EPI´s, com mais de 26 anos de mercado. Seus produtos seguem tendências em design, segurança e bem-estar e são ideais para todos os tipos de negócios, desde atendimento ao público até os setores industriais, alimentícios, de saúde e construção civil.
                     </p>
                     <Button>Compre Weikki</Button>
                 </div>

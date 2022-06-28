@@ -13,7 +13,7 @@ export default function Partners() {
     return (
         <div className={styles.partners}>
             <SectionTitle alternative>Nossos <strong>parceiros</strong></SectionTitle>
-            <p className={styles.description}>Somos parceiros e representantes de grandes indústrias para entregar as melhores soluções para cada uma das suas necessidades.</p>
+            <p className={styles.description}>Somos parceiros e representantes de grandes indústrias para entregar as melhores soluções para as suas necessidades.</p>
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <Image src={image1} alt="Logo oficial do parceiro Betannin" className={styles.image} />
