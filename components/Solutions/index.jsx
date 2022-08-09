@@ -5,12 +5,13 @@ import icon3 from './icons/icon3.svg'
 import icon4 from './icons/icon4.svg'
 import icon5 from './icons/icon5.svg'
 import icon7 from './icons/icon7.svg'
-import descartaveis from './images/descartaveis.webp'
+import icon8 from './icons/icon8.svg'
 import epis from './images/epis.webp'
 import escritorio from './images/escritorio.webp'
 import limpeza from './images/limpeza.webp'
 import material from './images/material.webp'
 import uniformes from './images/uniformes.png'
+import copa from './images/copa.png'
 import embalagens from './images/embalagens.png'
 import AreaIcon from '../AreaIcon'
 import Image from 'next/image'
@@ -58,6 +59,12 @@ export default function Solutions() {
             title: "Embalagens",
             description: 'Filmes Termoencolhíveis | Bobinas Sacos plásticos | Filme Stretch | Embalagens para food',
             image: embalagens
+        },
+        {
+            icon: icon8,
+            title: "Copa e cozinha",
+            description: "Colher | Copo | Guardanapo | Kit de talheres | Garrafa térmica | Bandeja",
+            image: copa
         }
     ]
 
