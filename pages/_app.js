@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" content="company" />
         <meta property="og:title" content="Onfinity - Soluções em suprimentos corporativos" />
         <meta property="og:description" content="A Onfinity é uma solução completa em suprimentos corporativos, fornecendo a sua empresa produtos de higiene e limpeza, epis, uniformes, materias médicos, embalagens, descatáveis e materias de escritório/informática." />
-        <meta property="og:image" content="https://onfinity.com.br/images/cover-blue.png" />
+        <meta property="og:image" content="https://onfinity.com.br/images/cover.png" />
         <meta property="og:url" content="https://onfinity.com.br" />
         <meta property="og:site_name" content="Onfinity" />
         <meta property="fb:admins" content="Onfinity-101644625222997" />
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Onfinity - Soluções em suprimentos corporativos" />
         <meta name="twitter:description" content="A Onfinity é uma solução completa em suprimentos corporativos, fornecendo a sua empresa produtos de higiene e limpeza, epis, uniformes, materias médicos, embalagens, descatáveis e materias de escritório/informática." />
-        <meta name="twitter:image" content="https://onfinity.com.br/images/cover-blue.png" />
+        <meta name="twitter:image" content="https://onfinity.com.br/images/cover.png" />
         <meta name="twitter:url" content="https://onfinity.com.br" />
 
         <link rel='canonical' href='https://onfinity.com.br' />
