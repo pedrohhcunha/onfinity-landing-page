@@ -22,14 +22,14 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 20px;
         list-style: none;
     
         .item{
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 250px;
+            width: 260px;
         }
     }
 
