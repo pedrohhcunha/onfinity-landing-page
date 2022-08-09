@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta charset="UTF-8" />
         <meta name="description" content="A Onfinity é uma solução completa em suprimentos corporativos, fornecendo a sua empresa produtos de higiene e limpeza, epis, uniformes, materias médicos, embalagens, descatáveis e materias de escritório/informática." />
-        <meta name="keywords" content="Onfinity, suprimentos, corporativos, soluções, mercado corporativos, suprimento corporativo, suprimentos corporativos office, apis, uniformes, descartáveis, papel, linha de papéis, higiene e limpeza, higiente, limpeza" />
+        <meta name="keywords" content="Onfinity, Suprimentos, Corporativos, Insumos, Uniformes, EPIs, Higiene, Limpeza, Descartáveis, Escritório, Informática, Médicos, Embalagens, Copa, Cozinha, Fabricação, Importação, Distribuição, ESG, Reciclado, Reciclagem, Cirúrgico, Ambulatoriais, Aventais, Máscaras, Campo, Papel, Civil, Supermercado" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Onfinity" />
         <meta name="google-site-verification" content="H8NT1XQ_9J2q3Nh36rGyzJN1vrSwaZ1BeK8cHQc5tkk" />
