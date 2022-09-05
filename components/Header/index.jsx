@@ -11,6 +11,10 @@ export default function Header({ shadow = true }) {
 
     const [sideMenuActive, setSideMenuActive] = useState(false);
 
+    function openEcommerce() {
+        window.location.href = 'https://centerpapeis.meuspedidos.com.br/entrar'
+    }
+
     return(
         <header className={`${styles.header} ${shadow === true ? styles.withShadow : ''}`}>
             <Link href="/">
@@ -43,9 +47,7 @@ export default function Header({ shadow = true }) {
                 </ul>
                 <div className={styles.areaButton}>
                     <Button
-                        onClick={() => {
-                            window.location.href = 'https://centerpapeis.meuspedidos.com.br/entrar'
-                        }}
+                        onClick={openEcommerce}
                     >Ecommerce B2B</Button>
                 </div>
             </nav>
