@@ -42,7 +42,11 @@ export default function Header({ shadow = true }) {
                     </li>
                 </ul>
                 <div className={styles.areaButton}>
-                    <Button>Comprar agora</Button>
+                    <Button
+                        onClick={() => {
+                            window.location.href = 'https://centerpapeis.meuspedidos.com.br/entrar'
+                        }}
+                    >Ecommerce B2B</Button>
                 </div>
             </nav>
             <FontAwesomeIcon onClick={() => setSideMenuActive(!sideMenuActive)} icon={faBars} className={styles.icon} />
