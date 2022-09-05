@@ -47,6 +47,7 @@ export default function Header({ shadow = true }) {
                 </ul>
                 <div className={styles.areaButton}>
                     <Button
+                        type="submit"
                         onClick={openEcommerce}
                     >Ecommerce B2B</Button>
                 </div>
